@@ -21,7 +21,7 @@ carpentry_description: 'TF Data Science Courses'
 title: 'Introduction to Python Programming' # FIXME
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: ~ 2025-07-16
+created: '2025-07-16'
 
 # Comma-separated list of keywords for the lesson
 keywords: 'software, data, lesson, The Carpentries' # FIXME
