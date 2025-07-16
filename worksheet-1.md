@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Python"
+title: "Worksheet 1"
 teaching: 10 # teaching time in minutes
 exercises: 2 # exercise time in minutes
 ---
