@@ -235,7 +235,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="introduction.html">1. Introduction to Python</a>
+        <a href="01_Getting_Started.html">1. Getting Started</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -247,7 +247,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="worksheet-1.html">2. Worksheet 1</a>
+        <a href="02_Beginning_to_Program.html">2. Beginning to Program</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -311,11 +311,11 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         
         
-<section id="aio-introduction"><p>Content from <a href="introduction.html">Introduction to Python</a></p>
+<section id="aio-01_Getting_Started"><p>Content from <a href="01_Getting_Started.html">Getting Started</a></p>
 <hr>
-<p>Last updated on 2025-07-16 |
+<p>Last updated on 2025-08-06 |
 
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/01_Getting_Started.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -328,8 +328,9 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>How do you write a lesson using Markdown and
-<a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
+<li>Do you know what a variable in Python is?</li>
+<li>What are data types and how can we use them?</li>
+<li>How can we work with sequences of data in Python?</li>
 </ul>
 </div>
 </div>
@@ -339,249 +340,65 @@
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Explain how to use markdown with The Carpentries Workbench</li>
-<li>Demonstrate how to include pieces of code, figures, and nested
-challenge blocks</li>
+<li>Learn how expressions work and how their results can be assigned to
+a variable</li>
+<li>Explore some basic data types: numbers, strings, and lists</li>
+<li>Discover what “objects” are and how methods work on those
+objects</li>
+<li>Begin to work with sequential data types like lists</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<section><h2 class="section-heading" id="running-python">Running Python<a class="anchor" aria-label="anchor" href="#running-python"></a>
 </h2>
 <hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.html" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson:</p>
-<ol style="list-style-type: decimal">
-<li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
-<li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
-</ol>
-<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
-</button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
-<div class="accordion-body">
-<p>Inline instructor notes can help inform instructors of timing
-challenges associated with the lessons. They appear in the “Instructor
-View”</p>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
+<p>Python itself normally exists just to run programs that you have
+written, but it can run as a program in its own right, allowing you to
+explore the language by typing commands which it then executes for you.
+Quite a lot can be done at this command prompt, but to do anything
+serious you will need to start creating your programs in a text editor
+and executing them with Python. However, we will start by looking at
+what you can do at the Python prompt.</p>
+<p>Python is already installed on the computers in this room (and
+hopefully on your own machine now) and there is an Anaconda Python
+program group containing a number of items
+(<code>Start Menu-&gt;All Programs-&gt;Programming Tools-&gt;Anaconda 3 (64-bit)</code>).
+The two which concern us at the moment are “Spyder” and, maybe,
+“Anaconda Prompt”. For the moment, click the Spyder icon and a window
+like the one below should appear. If you are not using Anaconda Python,
+the distribution that you install should have at the very least an IDLE
+icon in its program group, which will present a window which will allow
+you to enter Python statements in a similar way.</p>
+<figure><img src="../fig/01_idle_window.jpg" alt="Idle window" class="figure mx-auto d-block"><div class="figcaption">Idle window</div>
+</figure><p>This might look daunting at first sight, but for the moment, you just
+need to concentrate on the panel in the lower right of the screen, that
+has the title “Console…”. If you click in this pane, next to the
+<code>In [1]:</code> prompt, you should get a flashing cursor, and you
+can start typing Python commands. It might help for the moment, to drag
+the dividers the top and left of this pane to make it larger.</p>
+<div id="hello-world" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?</h3>
+<div id="hello-world" class="callout-inner">
+<h3 class="callout-title">Hello, World</h3>
 <div class="callout-content">
-<p>What is the output of this command?</p>
+<p>As is traditional under these circumstances, the first thing you
+should do is get Python to print out the text “Hello, World”. To do this
+type:</p>
 <div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, World"</span>)</span></code></pre>
 </div>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
-<div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within challenge blocks?</h3>
-<div class="callout-content">
-
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
-<div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
-</div>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
-</h2>
-<hr class="half-width">
-<p>You can use standard markdown for static figures with the following
-syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="callout1" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout</h3>
-<div class="callout-content">
-<p>Callout sections can highlight information.</p>
-<p>They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present “asides”: content that is
-not central to the narrative of the lesson, e.g. by providing the answer
-to a commonly-asked question.</p>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="math">Math<a class="anchor" aria-label="anchor" href="#math"></a>
-</h2>
-<hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
-<div id="keypoints1" class="callout keypoints">
-<div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Key Points</h3>
-<div class="callout-content">
-<ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
-</ul>
-</div>
-</div>
-</div>
-<!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</section></section><section id="aio-worksheet-1"><p>Content from <a href="worksheet-1.html">Worksheet 1</a></p>
-<hr>
-<p>Last updated on 2025-07-16 |
-
-        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/worksheet-1.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<div class="overview card">
-<h2 class="card-header">Overview</h2>
-<div class="row g-0">
-<div class="col-md-4">
-<div class="card-body">
-<div class="inner">
-<h3 class="card-title">Questions</h3>
-<ul>
-<li>How do you write a lesson using Markdown and
-<a href="https://carpentries.github.io/sandpaper/" class="external-link">sandpaper</a>?</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-<div class="inner bordered">
-<h3 class="card-title">Objectives</h3>
-<ul>
-<li>Explain how to use markdown with The Carpentries Workbench</li>
-<li>Demonstrate how to include pieces of code, figures, and nested
-challenge blocks</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
-</h2>
-<hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.html" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson:</p>
-<ol style="list-style-type: decimal">
-<li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
-<li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
-</ol>
-<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
-</button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
-<div class="accordion-body">
-<p>Inline instructor notes can help inform instructors of timing
-challenges associated with the lessons. They appear in the “Instructor
-View”</p>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?</h3>
-<div class="callout-content">
-<p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
-</div>
+<p>at the Python prompt and press return. Barring the odd typing mistake
+you have just run your first Python script. Here, <code>print</code> is
+a Python function that tells the interpreter that you want it to output
+the things which follow in the brackets. The <code>"Hello, World"</code>
+is a string and is what you want the print function to print out.</p>
 </div>
 </div>
 </div>
@@ -595,20 +412,120 @@ View”</p>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
+<pre class="output" tabindex="0"><code><span><span class="st">'Hello, World'</span></span></code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
+</section><section><h2 class="section-heading" id="experimenting-with-the-python-shell">Experimenting with the Python Shell<a class="anchor" aria-label="anchor" href="#experimenting-with-the-python-shell"></a>
+</h2>
+<hr class="half-width">
+<p>The Python shell (which is what you are using now) is a great way to
+experiment with Python. It’s something that I return to every time I
+find myself thinking “I wonder what happens if you do this?” or “what’s
+the best way to do that?”. You can’t break anything by trying something
+and if you make a mistake at least you will get an error message that
+you might be able to decipher.</p>
+<p>You are not limited to what you can do at the prompt. You can load
+modules, look at them to see what they do, play with them. The first
+versions of the bar charts in Worksheet 4 were all produced at the
+Python prompt, which enabled me to tweak them to see exactly how I
+wanted them before writing the program to produce the whole figure. This
+meant I could see how they looked after every command and get them
+looking just as I wanted. I could also check the documentation for the
+modules I wanted to use by typing <code>help()</code>. There is a lot of
+information in there and you will find yourself using it again and
+again.</p>
+<p>The only thing you can’t do, though, is save what you have done, but
+in Spyder, you just need to click in the Editor pane on the left of the
+Window, then you can edit a program, then save and run it; we’ll see how
+to do that in Worksheet 2. When you want to use Python on your own
+computer, I recommend that you install Anaconda Python, which comes with
+almost all of the modules you will ever need pre-installed (and makes it
+simpler for you to install others). You can also install Anaconda on
+both Mac and Linux as well, and it would be worth it if you are planning
+on using some of the more complex modules like numpy and matplotlib.</p>
+</section><section><h2 class="section-heading" id="evaluating-expressions">Evaluating Expressions<a class="anchor" aria-label="anchor" href="#evaluating-expressions"></a>
+</h2>
+<hr class="half-width">
+<p>The Python shell can also be used to evaluate expressions, allowing
+you either to perform calculations interactively, or more usually to
+check more complicated expressions interactively before putting them in
+your programs. Python allows you to do all of the normal operations, in
+pretty much the way you would expect.</p>
+<p>Have a go with some expressions, such as:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="dv">3</span> <span class="op">*</span> <span class="dv">4</span>     <span class="co"># Multiplication</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="dv">7</span> <span class="op">+</span> <span class="dv">10</span>    <span class="co"># Addition</span></span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="dv">7</span> <span class="op">-</span> <span class="dv">10</span>    <span class="co"># Subtraction</span></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="dv">10</span> <span class="op">/</span> <span class="dv">2</span>    <span class="co"># Division</span></span></code></pre>
+</div>
+<p>So far, so good, but don’t limit yourself to the examples here. Try
+some of your own and make sure you understand the results. There are a
+few other operators, though, which you might not be as familiar
+with.</p>
+<p>Try these:</p>
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="dv">10</span> <span class="op">%</span> <span class="dv">7</span>    <span class="co"># Modulus (remainder)</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="dv">2</span> <span class="op">**</span> <span class="dv">10</span>   <span class="co"># Exponentiation (2 to the power of 10)</span></span></code></pre>
+</div>
+<p>Again, as expected. However, there are a few things that you need to
+be aware of when using arithmetic in any programming language. In many
+languages, if your numbers are integers, they will return an integer
+(whole number) value, and this was the case in Python up to version 3.
+Now, though, Python 3 returns the correct floating point (decimal
+number) value.</p>
+<p>So try:</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="dv">10</span> <span class="op">/</span> <span class="dv">7</span></span></code></pre>
+</div>
+<p>Here you should get the answer 1.428571… This may or may not be what
+you want, but if you want to get just the integer result in the first
+place, you can force Python to give you that as well using so-called
+“floor division”:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="dv">10</span> <span class="op">//</span> <span class="dv">7</span></span></code></pre>
+</div>
+<p>When you installed Python, I told you to use the 64-bit version, and
+you might think this limits you in the size of the numbers you can deal
+with. In theory, a 64 bit computer can (easily) store numbers up to:</p>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="dv">2</span> <span class="op">**</span> <span class="dv">64</span></span></code></pre>
+</div>
+<p>Python can deal with numbers slightly larger than this, though so the
+following works just fine:</p>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="dv">2</span> <span class="op">**</span> <span class="dv">1024</span></span></code></pre>
+</div>
+<p>Raising 2 to the power of 1 million starts to tax Python though, but
+perhaps not in obvious ways:</p>
+<div class="codewrapper sourceCode" id="cb9">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="dv">2</span> <span class="op">**</span> <span class="dv">1000000</span></span></code></pre>
+</div>
+<div id="large-numbers" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within challenge blocks?</h3>
+<div id="large-numbers" class="callout-inner">
+<h3 class="callout-title">Large Numbers</h3>
 <div class="callout-content">
-
+<p>Q: What is the practical limit in terms of the size of numbers that
+can be stored?</p>
 </div>
 </div>
 </div>
@@ -619,67 +536,768 @@ View”</p>
 </button>
 <div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
+<p>A: You can get Python to store numbers up to
+<code>2 ** 1000000000</code> (2 to the power of 1 billion) fairly
+easily, but Python will give you a <code>ValueError</code> if you try to
+print out stored numbers that are more than 4,300 digits long, e.g.:</p>
+<div class="codewrapper sourceCode" id="cb10">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">2</span> <span class="op">**</span> <span class="dv">16384</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a><span class="bu">print</span>(a)</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>ValueError: Exceeds the limit (4300 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit</code></pre>
 </div>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
+</div>
+<p>Some of these operators don’t just work on numbers, <code>+</code>
+and <code>*</code> can be used on strings as well. Strings are just
+sequences of characters enclosed in quotation marks like the
+<code>Hello, World</code> above. Python doesn’t mind if you use single
+or double quotes as long as you don’t mix them (not strictly true, but
+ask if you want to know the details..) “Addition” concatenates two (or
+more) strings together to return a new, longer string. “Multiplication”,
+actually repetition, takes a number and a string and repeats the string
+that many times in a new string:</p>
+<div class="codewrapper sourceCode" id="cb12">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="co">'Hello, '</span> <span class="op">+</span> <span class="st">'world!'</span></span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="co">'Hello'</span> <span class="op">*</span> <span class="dv">8</span></span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a><span class="dv">9</span> <span class="op">*</span> <span class="st">'Hello...'</span></span></code></pre>
+</div>
+<div id="mathematical-expressions" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="mathematical-expressions" class="callout-inner">
+<h3 class="callout-title">Mathematical Expressions</h3>
+<div class="callout-content">
+<p>Try to use expressions that you would use in your normal work and see
+if they give the results you expect. Explore using brackets to group
+sub-expressions: things in brackets are always evaluated before
+everything else. Remember BODMAS (or BIDMAS)?</p>
+<p>Before you move on to the next section, use a single expression to
+calculate the length of the hypotenuse of a right angled triangle where
+the lengths of the other sides are 12 and 5, using Pythagoras’
+Theorem.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
+<p>Raising a number to the power of 0.5 is the same as calculating its
+square root.</p>
+<p>You must calculate the squares of the other two sides in separate
+pairs of brackets, and then wrap the addition in another pair of
+brackets before raising to the power of 0.5:</p>
+<div class="codewrapper sourceCode" id="cb13">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a>((<span class="dv">12</span> <span class="op">**</span> <span class="dv">2</span>) <span class="op">+</span> (<span class="dv">5</span> <span class="op">**</span> <span class="dv">2</span>)) <span class="op">**</span> <span class="fl">0.5</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code><span><span class="fl">13.0</span></span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="using-variables">Using Variables<a class="anchor" aria-label="anchor" href="#using-variables"></a>
 </h2>
 <hr class="half-width">
-<p>You can use standard markdown for static figures with the following
-syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="callout1" class="callout">
+<p>So far, we have just been playing with what Python calls values. When
+you are writing programs, it’s useful to be able to give names to the
+values that we are dealing with so that once we do a calculation or
+string manipulation we can refer to the results later. We do this with
+an assignment statement which looks like this:</p>
+<div class="codewrapper sourceCode" id="cb15">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">3</span></span></code></pre>
+</div>
+<p>You’ll notice when you type this, that Python doesn’t return
+anything, and this is also true if you capture the result of one of the
+expressions that we tried above:</p>
+<div class="codewrapper sourceCode" id="cb16">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">10</span> <span class="op">/</span> <span class="dv">7</span></span></code></pre>
+</div>
+<p>To look at the values, just type:</p>
+<div class="codewrapper sourceCode" id="cb17">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a>x</span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a>y</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>&gt;&gt;&gt; x
+3
+&gt;&gt;&gt; y
+1.4285714285714286</code></pre>
+</div>
+<p>More normally, you would probably output the results using the print
+statement we started with:</p>
+<div class="codewrapper sourceCode" id="cb19">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="bu">print</span>(x, y)</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>3 1.4285714285714286</code></pre>
+</div>
+<p>As well as being on the left of an assignment operation, variable
+names can be used in the expressions as well so:</p>
+<div class="codewrapper sourceCode" id="cb21">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a>x <span class="op">=</span> x <span class="op">+</span> y</span></code></pre>
+</div>
+<p>This replaces the value currently referred to as x with the new value
+obtained from adding the values of x and y. Variables that refer to
+numbers are fine and are incredibly useful, but they are also one of the
+less interesting types of Python data. This is because they only have a
+value. Some variables are much more interesting, and string variables
+are a good example.</p>
+<p>To assign a string to a variable you can do something like:</p>
+<div class="codewrapper sourceCode" id="cb22">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a>s <span class="op">=</span> <span class="st">"The quick brown fox jumps over the lazy dog"</span></span></code></pre>
+</div>
+<p>Again, you can just type the variable name or use it in a print
+statement, but what makes a variable containing a string more
+interesting is that it is one of Python’s object data types. This means
+that it doesn’t just passively hold the value of the string, it knows
+about things you can do to the string.</p>
+<p>For example:</p>
+<div class="codewrapper sourceCode" id="cb23">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" tabindex="-1"></a>s.upper()</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code><span><span class="st">'THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG'</span></span></code></pre>
+</div>
+<p>The <code>.</code> here indicates that the method belongs to the
+string object s, and the brackets indicate that we want to execute it.
+Here the brackets are empty, but later we will be using them to pass
+information into the methods. There are many things that strings can do
+with themselves, and if you look at the Python cheat sheet, you will see
+what they all are.</p>
+<p>Try using them on the string, for example:</p>
+<div class="codewrapper sourceCode" id="cb25">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" tabindex="-1"></a>s.capitalize()</span>
+<span id="cb25-2"><a href="#cb25-2" tabindex="-1"></a>s.title()</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>&gt;&gt;&gt; s.capitalize()
+'The quick brown fox jumps over the lazy dog'
+&gt;&gt;&gt; s.title()
+'The Quick Brown Fox Jumps Over The Lazy Dog'</code></pre>
+</div>
+<p>If you look at <code>s</code> itself after any of these, you’ll see
+it hasn’t changed. These object methods simply return a new version of
+the string with the appropriate transformation done to it which you can
+then store in another variable (or back in <code>s</code>) if you want
+to. This is because a string cannot be changed in place (in technical
+terms, it is “immutable”), only overwritten with a new value. So to save
+the new version of the string, you can type:</p>
+<div class="codewrapper sourceCode" id="cb27">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a>s <span class="op">=</span> s.title()</span></code></pre>
+</div>
+<p>You can use almost any combination of letters and numbers in the
+variable names, but there are a few rules: you can’t start a variable
+name with a number, and you can also include underscore characters.
+Variable names can also begin with underscore, but these tend to be used
+under special circumstances which you will discover once you start
+learning about object-oriented programming.</p>
+<div id="string-methods" class="callout challenge">
 <div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<i class="callout-icon" data-feather="zap"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Callout</h3>
+<div id="string-methods" class="callout-inner">
+<h3 class="callout-title">String Methods</h3>
 <div class="callout-content">
-<p>Callout sections can highlight information.</p>
-<p>They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present “asides”: content that is
-not central to the narrative of the lesson, e.g. by providing the answer
-to a commonly-asked question.</p>
+<p>Use the <code>.count()</code> method on the string
+<code>"The quick brown fox jumps over the lazy dog"</code> to count the
+occurrences of the word <code>"the"</code>. If this returns 1, how could
+you persuade it that it should be 2?</p>
+<p>Once you have that sorted out, try the following and understand what
+it has done.</p>
+<div class="codewrapper sourceCode" id="cb28">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" tabindex="-1"></a>s.split()</span></code></pre>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="math">Math<a class="anchor" aria-label="anchor" href="#math"></a>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div class="accordion-body">
+<p>The following does indeed return 1, because only the exact string
+<code>"the"</code> is matched.</p>
+<div class="codewrapper sourceCode" id="cb29">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" tabindex="-1"></a>s.count(<span class="st">"the"</span>)</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code><span><span class="fl">1</span></span></code></pre>
+</div>
+<p>You can, however, use the <code>.lower()</code> method first to
+convert the string to lower case, and then chain on the
+<code>.count()</code> after.</p>
+<div class="codewrapper sourceCode" id="cb31">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a>s.lower().count(<span class="st">"the"</span>)</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code><span><span class="fl">2</span></span></code></pre>
+</div>
+<p>The <code>.split()</code> function will split a string using any
+white space between characters as the delimiter by default, returning a
+list of the split string items. You can also pass in a delimiter of your
+choice, e.g. <code>"apple,banana".split(",")</code> to split by
+commas.</p>
+<div class="codewrapper sourceCode" id="cb33">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" tabindex="-1"></a>s.split()</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="lists">Lists<a class="anchor" aria-label="anchor" href="#lists"></a>
 </h2>
 <hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
-<div id="keypoints1" class="callout keypoints">
-<div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
+<p>The last exercise returned a result which you might think looks
+unusual.</p>
+<div class="codewrapper sourceCode" id="cb35">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" tabindex="-1"></a>s <span class="op">=</span> <span class="st">"The quick brown fox jumps over the lazy dog"</span></span>
+<span id="cb35-2"><a href="#cb35-2" tabindex="-1"></a>s.split()</span></code></pre>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Key Points</h3>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']</code></pre>
+</div>
+<p>This result is in the form of a list. A list is exactly what you
+would expect. It’s a set of values (which can be numbers, strings,
+objects or even lists, but that is a bit advanced for now) which are
+kept in a specific order.</p>
+<p>You can create a new list using the same format as the result
+above:</p>
+<div class="codewrapper sourceCode" id="cb37">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" tabindex="-1"></a>shopping <span class="op">=</span> [<span class="st">'bread'</span>, <span class="st">'potatoes'</span>, <span class="st">'eggs'</span>, <span class="st">'flour'</span>, <span class="st">'rubber duck'</span>, <span class="st">'pizza'</span>, <span class="st">'milk'</span>]</span></code></pre>
+</div>
+<p>Like strings, lists are a type of object, and so they also have some
+methods associated with them, which you can use. However, unlike
+strings, these methods mostly change the list <em>in place</em>, rather
+than returning a new list.</p>
+<p>So when you type:</p>
+<div class="codewrapper sourceCode" id="cb38">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a>shopping.sort()</span></code></pre>
+</div>
+<p>Python doesn’t return a value, but if you look at the list, you will
+see the order of the items has changed. This means that unlike strings,
+lists are mutable, and individual items and sets of items can be changed
+in place.</p>
+<p>If you decide you want to add items to the list, you can do it with
+the <code>append()</code> method:</p>
+<div class="codewrapper sourceCode" id="cb39">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" tabindex="-1"></a>shopping.append(<span class="st">'mayonnaise'</span>)</span></code></pre>
+</div>
+<p>If you feel it’s important enough to go at the top of the list, you
+can use <code>insert()</code> to insert the new item at a particular
+point and shuffle everything else up:</p>
+<div class="codewrapper sourceCode" id="cb40">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" tabindex="-1"></a>shopping.insert(<span class="dv">0</span>, <span class="st">'mayonnaise'</span>)</span></code></pre>
+</div>
+<p>Removing items from the list is just as easy and you use
+<code>.pop()</code> to do that. If you don’t give it an index (position
+in the list, more on that in the next section), it will remove the last
+item in the list, otherwise it removes the item with the index you
+specify and shuffles everything else up to close the gap.</p>
+</section><section><h2 class="section-heading" id="sequences">Sequences<a class="anchor" aria-label="anchor" href="#sequences"></a>
+</h2>
+<hr class="half-width">
+<p>The two object types that we have talked about so far share a number
+of properties. Both strings and lists consist of ordered sets of data.
+In the case of strings these are simple characters.</p>
+<p>In lists, the elements of the list can be anything. However, for both
+we might want to refer to a particular item or range of items in a
+string or list and we can do this easily:</p>
+<div class="codewrapper sourceCode" id="cb41">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" tabindex="-1"></a>words <span class="op">=</span> s.split()</span>
+<span id="cb41-2"><a href="#cb41-2" tabindex="-1"></a><span class="bu">print</span>(words[<span class="dv">3</span>])</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code><span><span class="va">fox</span></span></code></pre>
+</div>
+<p>You will see that <code>'fox'</code> is actually the fourth word and
+this is just one of the things that computers do that you have to get
+used to.</p>
+<p>The first element in a sequence has an index of 0, like so:</p>
+<div class="codewrapper sourceCode" id="cb43">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" tabindex="-1"></a><span class="bu">print</span>(words[<span class="dv">0</span>])</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code><span><span class="va">The</span></span></code></pre>
+</div>
+<p>This is referred to as zero-based indexing or offset numbering. It
+originates from programming languages where variables actually refer to
+the memory location of the start of the list, but has just become a
+convention.</p>
+<p>Negative indices are assumed to be relative to the end of the array
+so:</p>
+<div class="codewrapper sourceCode" id="cb45">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" tabindex="-1"></a>words[<span class="op">-</span><span class="dv">1</span>]</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code><span><span class="va">dog</span></span></code></pre>
+</div>
+<p>Of course, if we knew how long the sequence was, we could just use
+the index of the last element.</p>
+<p>For any sequence data type, the function <code>len()</code> will tell
+us how many elements it has:</p>
+<div class="codewrapper sourceCode" id="cb47">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" tabindex="-1"></a><span class="bu">len</span>(words)</span>
+<span id="cb47-2"><a href="#cb47-2" tabindex="-1"></a><span class="bu">len</span>(s)</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code><span><span class="fl">9</span></span>
+<span><span class="fl">43</span></span></code></pre>
+</div>
+<p>Since the sequences are indexed from zero, the last element, e.g.,
+<code>words[-1]</code> is the same as
+<code>words[len(words)-1]</code></p>
+<div id="indices-and-slices" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="indices-and-slices" class="callout-inner">
+<h3 class="callout-title">Indices and Slices</h3>
 <div class="callout-content">
+<p>There are a few quirks to list (sequence) indexing (apart from
+starting at 0), and I have tried to summarise these on the Python Cheat
+Sheet. Have a go with a few of the “Indices and Slices” and make sure
+you understand how they work.</p>
+<p>Then, instead of trying them on a list, try them on a string.</p>
+<p>Now, if you are really adventurous, try and print the third letter of
+the fourth word in the words list.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
+</button>
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div class="accordion-body">
+<p>The 0-based indexing in Python takes a little getting used to but,
+once you do, your brain will automatically translate “real” positions
+into o-based indices.</p>
+<div class="codewrapper sourceCode" id="cb49">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" tabindex="-1"></a>words[<span class="dv">5</span>]</span>
+<span id="cb49-2"><a href="#cb49-2" tabindex="-1"></a>words[<span class="op">-</span><span class="dv">2</span>]</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code><span><span class="st">'over'</span></span>
+<span><span class="st">'lazy'</span></span></code></pre>
+</div>
+<p>Slices let you access a range of values from sequence-type data, from
+a start index up to, but not including, an end index:</p>
+<div class="codewrapper sourceCode" id="cb51">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" tabindex="-1"></a>words[<span class="dv">3</span>:<span class="dv">6</span>]</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>['fox', 'jumps', 'over']</code></pre>
+</div>
+<p>This gave us the 4th, 5th, and 6th words, or from index 3 up to, but
+not including the word at index 6.</p>
+<p>You will learn more advanced indexing and slicing later…</p>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="summary">Summary<a class="anchor" aria-label="anchor" href="#summary"></a>
+</h2>
+<hr class="half-width">
 <ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
+<li>Python can calculate the results of a wide range of expressions, and
+print out the results.</li>
+<li>Variables can store results of calculations or simple values that we
+might need later.</li>
+<li>Variables refer to values. The values can be numbers (integer and
+floating point), strings or lists. We will soon see that there are other
+data types as well.</li>
+<li>Some data types are objects which have methods associated with them.
+These methods perform common and useful tasks on the values in the
+objects.</li>
+<li>Some data types are sequences which lets us access individual
+elements at will.</li>
+<li>Sequence data types allow us to step through the values in them, but
+to do that we need to take some first steps towards writing real
+programs… <!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</li>
+</ul></section></section><section id="aio-02_Beginning_to_Program"><p>Content from <a href="02_Beginning_to_Program.html">Beginning to Program</a></p>
+<hr>
+<p>Last updated on 2025-08-06 |
+
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/02_Beginning_to_Program.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What is a program and how do you create and run one?</li>
+<li>What is a for loop?</li>
+<li>What is a Python dictionary?</li>
 </ul>
 </div>
 </div>
 </div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Begin to learn how to build out programs to do specific tasks</li>
+<li>Learn how loops work and why they are useful</li>
+<li>Learn how to format strings</li>
+<li>Learn what dictionaries are and why they are useful</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="first-steps-in-programming">First Steps in Programming<a class="anchor" aria-label="anchor" href="#first-steps-in-programming"></a>
+</h2>
+<hr class="half-width">
+<p>So far, it’s been fun playing with commands at the Python prompt, but
+now we are going to need to start editing programs properly and saving
+them so that we can change them and re-use parts later. So, on your
+Spyder menu, click on <code>File-&gt;New file…</code> and a new tab will
+open in the Editor pane (the large one occupying the left half of the
+Spyder window; it will have the title <code>"untitled0.py"</code>). This
+will contain a couple of lines that begin with a # character which will
+tells Python not to execute the content of the lines (these are called
+“comments” and are incredibly useful) and some lines between
+triple-quotes, called a docstring. Underneath these lines, you can start
+typing you own program.</p>
+<p>Start by entering the following code:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>shopping <span class="op">=</span> [<span class="st">'bread'</span>, <span class="st">'potatoes'</span>, <span class="st">'eggs'</span>, <span class="st">'flour'</span>, <span class="st">'rubber duck'</span>, <span class="st">'pizza'</span>, <span class="st">'milk'</span>]</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> shopping:</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>   <span class="bu">print</span>(item)</span></code></pre>
+</div>
+<p>This is a very simple program, which creates a variable that refers
+to a list, then prints out each of the items in turn. There are a couple
+of things to comment on here. Firstly, the <code>for</code> statement
+creates the variable <code>item</code> (the variable name can of course
+be anything that you want), then sets the value of this variable to be
+each of the elements in the list <code>shopping</code> in turn. The line
+which is indented is then executed for each value assigned to the
+<code>item</code> variable and prints out the value.</p>
+<p>To execute the program you first need to save it using the
+<code>File-&gt;Save as…</code> menu option. You can save the file
+anywhere you like on your computer (it helps if you remember where), but
+it is a good idea (particularly under Windows) to give the file an
+extension of <code>.py</code>. This will mean that the computer will
+recognise it as a Python program. Once you have saved the file, you can
+press F5 (or choose <code>Run-&gt;Run</code> from Spyder’s menu, or
+press the “play” icon in the menu bar).</p>
+<p>Before the program starts running, a dialog box will appear like
+this:</p>
+<p><strong>INSERT IMAGE HERE</strong></p>
+<p>There are a couple of important points here, which might not be
+obvious.</p>
+<p>Firstly, the “Working Directory” option allows you to choose the
+folder that the program is running in. For most programs, you will need
+to set this to be the folder that contains e.g., data files that your
+program needs to read. For the moment, though, you don’t need to worry
+about it.</p>
+<p>The second is a bit more subtle. The “Console” options at the top are
+important. For the moment, you can leave them set at the default option
+of “Execute in the current Python or IPython console”, and the results
+of the program will appear in the pane on the bottom right of the
+window. Later on, we will need to choose “Execute in a dedicated Python
+console” to allow our programs to open up new windows containing the
+charts that we will produce in Worksheets 3 and 4.</p>
+<p>Returning to our program, and specifically the “for loop”. Whenever
+we want to execute a piece of Python code several times, this is one of
+the ways we can do it. Python recognises the lines we want to form part
+of the loop by the level of indentation and it is vital that you
+maintain consistent indentation throughout your programs. In fact,
+though, this is one of the things which leads to your programs being
+more readable and easier to understand, because visually, you can see
+the structure of the program at a glance by the indentation.</p>
+<div id="appending-to-lists" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="appending-to-lists" class="callout-inner">
+<h3 class="callout-title">Appending to Lists</h3>
+<div class="callout-content">
+<ol style="list-style-type: decimal">
+<li>Change the program above by adding a second list (with a different
+variable name) to the program, which contains cheese, flour, eggs,
+spaghetti, sausages and bread.</li>
+<li>Change the loop so that instead of printing the element, it appends
+it to first shopping list.</li>
+<li>Print out the new list.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>shopping <span class="op">=</span> [<span class="st">'bread'</span>, <span class="st">'potatoes'</span>, <span class="st">'eggs'</span>, <span class="st">'flour'</span>, <span class="st">'rubber duck'</span>, <span class="st">'pizza'</span>, <span class="st">'milk'</span>]</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>extrashopping <span class="op">=</span> [<span class="st">'cheese'</span>, <span class="st">'flour'</span>, <span class="st">'eggs'</span>, <span class="st">'spaghetti'</span>, <span class="st">'sausages'</span>, <span class="st">'bread'</span>]</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> extrashopping:</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>   shopping.append(item)</span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a><span class="bu">print</span>(shopping)</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>['bread', 'potatoes', 'eggs', 'flour', 'rubber duck', 'pizza', 'milk', 'cheese', 'flour', 'eggs', 'spaghetti', 'sausages', 'bread']</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="making-decisions">Making Decisions<a class="anchor" aria-label="anchor" href="#making-decisions"></a>
+</h2>
+<hr class="half-width">
+<p>The output from the previous exercise was:</p>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>['bread', 'potatoes', 'eggs', 'flour', 'rubber duck', 'pizza', 'milk', 'cheese', 'flour', 'eggs', 'spaghetti', 'sausages', 'bread']</code></pre>
+</div>
+<p>This looks to me as if it’s worked exactly as I described, but maybe
+not quite as I intended. We seem to have too many eggs and too much
+bread. This might not be a problem (and it does illustrate that the same
+value can be present in a list more than once), but I really just want
+one copy of each item. What we need to do is check before we add an
+element that there isn’t a value in there in the first place.
+Fortunately, Python lets us do this really easily.</p>
+<p>For example, if we go back to the IPython Console panel for a minute
+and try:</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>shopping <span class="op">=</span> [<span class="st">'eggs'</span>, <span class="st">'cheese'</span>, <span class="st">'milk'</span>]</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="co">'eggs'</span> <span class="kw">in</span> shopping</span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="co">'frogs'</span> <span class="kw">in</span> shopping</span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="co">'frogs'</span> <span class="kw">not</span> <span class="kw">in</span> shopping</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code><span><span class="va">True</span></span>
+<span><span class="va">False</span></span>
+<span><span class="va">True</span></span></code></pre>
+</div>
+<p>We can use this in a new Python statement, which allows us only to
+execute statements if a particular condition is true. The program could
+be changed to:</p>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>shopping <span class="op">=</span> [<span class="st">'bread'</span>, <span class="st">'potatoes'</span>, <span class="st">'eggs'</span>, <span class="st">'flour'</span>, <span class="st">'rubber duck'</span>, <span class="st">'pizza'</span>, <span class="st">'milk'</span>]</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>extrashopping <span class="op">=</span> [<span class="st">'cheese'</span>, <span class="st">'flour'</span>, <span class="st">'eggs'</span>, <span class="st">'spaghetti'</span>, <span class="st">'sausages'</span>, <span class="st">'bread'</span>]</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> extrashopping:</span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>   <span class="cf">if</span> item <span class="kw">not</span> <span class="kw">in</span> shopping:</span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a>      shopping.append(item)</span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a><span class="bu">print</span>(shopping)</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>['bread', 'potatoes', 'eggs', 'flour', 'rubber duck', 'pizza', 'milk', 'cheese', 'spaghetti', 'sausages']</code></pre>
+</div>
+<p>Much better. A couple of points to notice with the indentation. The
+<code>if</code> statement is indented with respect to the
+<code>for</code> statement, so it will be executed every time the loop
+executes. The <code>append</code> method call is indented with respect
+to the <code>if</code> statement, and so it will only be executed if the
+condition in the <code>if</code> statement (i.e.,
+<code>item not in shopping</code>) is <code>True</code>. Finally, the
+last print statement is at the very start of the line; this means it
+will only execute once all iterations of the loop are done.</p>
+<div id="additional-logic" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="additional-logic" class="callout-inner">
+<h3 class="callout-title">Additional Logic</h3>
+<div class="callout-content">
+<p>Change the program above to print out a message when a duplicate item
+is found. To do this, you could add another <code>if</code> statement to
+see if the item is in the list.</p>
+<p>Alternatively, you can add an <code>else:</code> clause to the
+existing if statement. This will be executed when the condition in the
+<code>if</code> statement is <code>False</code>.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb9">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>shopping <span class="op">=</span> [<span class="st">'bread'</span>, <span class="st">'potatoes'</span>, <span class="st">'eggs'</span>, <span class="st">'flour'</span>, <span class="st">'rubber duck'</span>, <span class="st">'pizza'</span>, <span class="st">'milk'</span>]</span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>extrashopping <span class="op">=</span> [<span class="st">'cheese'</span>, <span class="st">'flour'</span>, <span class="st">'eggs'</span>, <span class="st">'spaghetti'</span>, <span class="st">'sausages'</span>, <span class="st">'bread'</span>]</span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> extrashopping:</span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a>   <span class="cf">if</span> item <span class="kw">not</span> <span class="kw">in</span> shopping:</span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a>      shopping.append(item)</span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>   <span class="cf">else</span>:</span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>      <span class="bu">print</span>(item, <span class="st">'is already in the shopping list'</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a><span class="bu">print</span>(shopping)</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>flour is already in the shopping list
+eggs is already in the shopping list
+bread is already in the shopping list
+
+['bread', 'potatoes', 'eggs', 'flour', 'rubber duck', 'pizza', 'milk', 'cheese', 'spaghetti', 'sausages']</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="counting-loops">Counting Loops<a class="anchor" aria-label="anchor" href="#counting-loops"></a>
+</h2>
+<hr class="half-width"></section><section><h2 class="section-heading" id="direct-and-indirect-loops">Direct and Indirect Loops<a class="anchor" aria-label="anchor" href="#direct-and-indirect-loops"></a>
+</h2>
+<hr class="half-width"></section><section><h2 class="section-heading" id="enumerating-lists">Enumerating Lists<a class="anchor" aria-label="anchor" href="#enumerating-lists"></a>
+</h2>
+<hr class="half-width"></section><section><h2 class="section-heading" id="string-formatting">String Formatting<a class="anchor" aria-label="anchor" href="#string-formatting"></a>
+</h2>
+<hr class="half-width"></section><section><h2 class="section-heading" id="looking-up-data">Looking Up Data<a class="anchor" aria-label="anchor" href="#looking-up-data"></a>
+</h2>
+<hr class="half-width"></section><section><h2 class="section-heading" id="summary">Summary<a class="anchor" aria-label="anchor" href="#summary"></a>
+</h2>
+<hr class="half-width">
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- -->
-</section></section>
+ --></section></section>
 </div>
     </main>
 </div>
@@ -727,8 +1345,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/aio.html",
   "dateCreated": "2025-07-16",
-  "dateModified": "2025-08-05",
-  "datePublished": "2025-08-05"
+  "dateModified": "2025-08-06",
+  "datePublished": "2025-08-06"
 }
 
   </script><script>
