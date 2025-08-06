@@ -66,8 +66,8 @@ contact: 'team@carpentries.org' # FIXME
 
 # Order of episodes in your lesson
 episodes: 
-- introduction.md
-- worksheet-1.md
+- 01_Getting_Started.md
+- 02_Beginning_to_Program.md
 
 # Information for Learners
 learners: 
