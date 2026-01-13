@@ -101,7 +101,7 @@ One of the big advantages that Python has as a programming language is that it i
 
 We have now met a few of Python’s most common data types (there are a lot more and, if you like, you can make your own as well) and you should be happy with the ways we can repeat actions on lists and dictionaries with for loops, as well as take decisions based on our data using if statements. We are now going to introduce a new data type, the Python file object. This is Python’s way of letting us get data from files on the computer. The simplest way to explain it is to get a suitable data file and play with it on the command line. We are going to use a couple of separate files in this worksheet, and we will start by downloading them. They can be found here:
 
-![Intro to Python files on GitHub](https://github.com/sandyjmacdonald/intro-python-course)
+[Intro to Python files on GitHub](https://github.com/sandyjmacdonald/intro-python-course)
 
 Download them all by clicking the green "Code" button, then "Download ZIP". The first file you need is called `seq_lengths.txt`. Make sure that you move the files, once you've unzipped them, into the same folder where you will save the Python programs that you are going to write to process the data. Let's look at the `seq_lengths.txt` file. This is a simple file which contains the lengths of >10,000 DNA sequences produced in a particular experiment, one per line. What we want to do, at least as a first step, is to read these lengths into a list. We need to start by opening the file, so create a new Python program file, and save it in the same folder where the data file is located.
 
