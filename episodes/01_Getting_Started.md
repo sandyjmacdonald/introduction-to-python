@@ -27,7 +27,7 @@ Python itself normally exists just to run programs that you have written, but it
 
 Python is already installed on the computers in this room (and hopefully on your own machine now) and there is an Anaconda Python program group containing a number of items (`Start Menu->All Programs->Programming Tools->Anaconda 3 (64-bit)`). The two which concern us at the moment are "Spyder" and, maybe, "Anaconda Prompt". For the moment, click the Spyder icon and a window like the one below should appear. If you are not using Anaconda Python, the distribution that you install should have at the very least an IDLE icon in its program group, which will present a window which will allow you to enter Python statements in a similar way.
 
-![Idle window](fig/01_idle_window.jpg){"Screenshot of an Idle window"}
+![Idle window](fig/01_idle_window.jpg){alt="Screenshot of an Idle window"}
 
 This might look daunting at first sight, but for the moment, you just need to concentrate on the panel in the lower right of the screen, that has the title "Console...". If you click in this pane, next to the `In [1]:` prompt, you should get a flashing cursor, and you can start typing Python commands. It might help for the moment, to drag the dividers the top and left of this pane to make it larger.
 
