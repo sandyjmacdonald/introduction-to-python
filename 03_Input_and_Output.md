@@ -214,7 +214,7 @@ plt.show()
 
 When you run the program now, it should show you a figure like this:
 
-![An example of a matplotlib histogram](fig/03_matplotlib_histogram.jpg)
+![An example of a matplotlib histogram](fig/03_matplotlib_histogram.jpg "An example of a matplotlib histogram")
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
@@ -230,7 +230,7 @@ produces a histogram with 50 pink bars instead of the default of ten blue ones. 
 
 If you Google “matplotlib hist”, you should be able to find the full set of possible options and see if you can reproduce this figure:
 
-![Example of matplotlib customised plot](fig/03_matplotlib_stacked_histogram.jpg)
+![Example of matplotlib customised plot](fig/03_matplotlib_stacked_histogram.jpg "Example of a matplotlib customised plot")
 
 :::::::::::::::: solution
 
