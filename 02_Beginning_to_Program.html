@@ -108,11 +108,11 @@
   Introduction to Python Programming
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 50%" class="percentage">
-    50%
+<aside class="col-md-12 lesson-progress"><div style="width: 33%" class="percentage">
+    33%
   </div>
   <div class="progress software">
-    <div class="progress-bar software" role="progressbar" style="width: 50%" aria-valuenow="50" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar software" role="progressbar" style="width: 33%" aria-valuenow="33" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -229,6 +229,15 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="03_Input_and_Output.html">3. Input and Output</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -272,7 +281,7 @@
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="01_Getting_Started.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="03_Input_and_Output.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -280,14 +289,14 @@
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Getting Started
         </a>
-        <a class="chapter-link float-end" href="index.html" rel="next">
-          Home
+        <a class="chapter-link float-end" href="03_Input_and_Output.html" rel="next">
+          Next: Input and Output...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Beginning to Program</h1>
-        <p>Last updated on 2025-08-06 |
+        <p>Last updated on 2026-01-13 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/02_Beginning_to_Program.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -344,7 +353,7 @@ typing you own program.</p>
 <pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>shopping <span class="op">=</span> [<span class="st">'bread'</span>, <span class="st">'potatoes'</span>, <span class="st">'eggs'</span>, <span class="st">'flour'</span>, <span class="st">'rubber duck'</span>, <span class="st">'pizza'</span>, <span class="st">'milk'</span>]</span>
 <span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> shopping:</span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>   <span class="bu">print</span>(item)</span></code></pre>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>    <span class="bu">print</span>(item)</span></code></pre>
 </div>
 <p>This is a very simple program, which creates a variable that refers
 to a list, then prints out each of the items in turn. There are a couple
@@ -409,7 +418,7 @@ it to first shopping list.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -418,7 +427,7 @@ it to first shopping list.</li>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>extrashopping <span class="op">=</span> [<span class="st">'cheese'</span>, <span class="st">'flour'</span>, <span class="st">'eggs'</span>, <span class="st">'spaghetti'</span>, <span class="st">'sausages'</span>, <span class="st">'bread'</span>]</span>
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> extrashopping:</span>
-<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>   shopping.append(item)</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>    shopping.append(item)</span>
 <span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a></span>
 <span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a><span class="bu">print</span>(shopping)</span></code></pre>
 </div>
@@ -473,8 +482,8 @@ be changed to:</p>
 <span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>extrashopping <span class="op">=</span> [<span class="st">'cheese'</span>, <span class="st">'flour'</span>, <span class="st">'eggs'</span>, <span class="st">'spaghetti'</span>, <span class="st">'sausages'</span>, <span class="st">'bread'</span>]</span>
 <span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a></span>
 <span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> extrashopping:</span>
-<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>   <span class="cf">if</span> item <span class="kw">not</span> <span class="kw">in</span> shopping:</span>
-<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a>      shopping.append(item)</span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>    <span class="cf">if</span> item <span class="kw">not</span> <span class="kw">in</span> shopping:</span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a>        shopping.append(item)</span>
 <span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a></span>
 <span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a><span class="bu">print</span>(shopping)</span></code></pre>
 </div>
@@ -514,7 +523,7 @@ existing if statement. This will be executed when the condition in the
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -523,10 +532,10 @@ existing if statement. This will be executed when the condition in the
 <span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>extrashopping <span class="op">=</span> [<span class="st">'cheese'</span>, <span class="st">'flour'</span>, <span class="st">'eggs'</span>, <span class="st">'spaghetti'</span>, <span class="st">'sausages'</span>, <span class="st">'bread'</span>]</span>
 <span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a></span>
 <span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> extrashopping:</span>
-<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a>   <span class="cf">if</span> item <span class="kw">not</span> <span class="kw">in</span> shopping:</span>
-<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a>      shopping.append(item)</span>
-<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>   <span class="cf">else</span>:</span>
-<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>      <span class="bu">print</span>(item, <span class="st">'is already in the shopping list'</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a>    <span class="cf">if</span> item <span class="kw">not</span> <span class="kw">in</span> shopping:</span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a>        shopping.append(item)</span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>        <span class="bu">print</span>(item, <span class="st">'is already in the shopping list'</span>)</span>
 <span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a></span>
 <span id="cb9-10"><a href="#cb9-10" tabindex="-1"></a><span class="bu">print</span>(shopping)</span></code></pre>
 </div>
@@ -544,18 +553,535 @@ bread is already in the shopping list
 </div>
 </div>
 </section><section><h2 class="section-heading" id="counting-loops">Counting Loops<a class="anchor" aria-label="anchor" href="#counting-loops"></a></h2>
-<hr class="half-width"></section><section><h2 class="section-heading" id="direct-and-indirect-loops">Direct and Indirect Loops<a class="anchor" aria-label="anchor" href="#direct-and-indirect-loops"></a></h2>
-<hr class="half-width"></section><section><h2 class="section-heading" id="enumerating-lists">Enumerating Lists<a class="anchor" aria-label="anchor" href="#enumerating-lists"></a></h2>
-<hr class="half-width"></section><section><h2 class="section-heading" id="string-formatting">String Formatting<a class="anchor" aria-label="anchor" href="#string-formatting"></a></h2>
-<hr class="half-width"></section><section><h2 class="section-heading" id="looking-up-data">Looking Up Data<a class="anchor" aria-label="anchor" href="#looking-up-data"></a></h2>
-<hr class="half-width"></section><section><h2 class="section-heading" id="summary">Summary<a class="anchor" aria-label="anchor" href="#summary"></a></h2>
-<hr class="half-width"><!--
+<hr class="half-width"><p>Looping over elements of a list is great, but there are other
+circumstances where you just want to do something a set number of times.
+Most programming languages have a <code>for</code> statement which does
+exactly this, but as we have seen above, Python’s <code>for</code>
+statement goes through a list and returns each value in that list.
+Fortunately, Python has a function which generates the numbers for us to
+use in a <code>for</code> loop. Go to the Python shell and type:</p>
+<div class="codewrapper sourceCode" id="cb11">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">10</span>))</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>[0,1,2,3,4,5,6,7,8,9]</code></pre>
+</div>
+<p>So, a loop like this:</p>
+<div class="codewrapper sourceCode" id="cb13">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code></pre>
+</div>
+<p>would print out the numbers 0 to 9, one to a line. The
+<code>range()</code> function can provide most lists of numbers that you
+would need.</p>
+<div id="experimenting-with-the-range-function" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="experimenting-with-the-range-function" class="callout-inner">
+<h3 class="callout-title">Experimenting with the <code>range()</code>
+Function</h3>
+<div class="callout-content">
+<p>Explore what you can do with the <code>range()</code> function. It
+can take just one number as we did above, or two as a starting and
+ending value, or even three which are a start, end, and step value. Try
+all three versions of the range command, and then work out how to get
+the list: <code>[4, 11, 18, 25]</code>.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb14">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">26</span>))</span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a><span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">4</span>,<span class="dv">26</span>))</span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a><span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">4</span>,<span class="dv">26</span>,<span class="dv">7</span>))</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+[4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+[4, 11, 18, 25]</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="direct-and-indirect-loops">Direct and Indirect Loops<a class="anchor" aria-label="anchor" href="#direct-and-indirect-loops"></a></h2>
+<hr class="half-width"><p>So, <code>range()</code> gets us a list we can use to count any
+number that we want, but why does it stop short of the limit we give it?
+Why does <code>range(n)</code> mean 0 to n-1 instead of 1 to n? Well,
+try out the following two pieces of code:</p>
+<div class="codewrapper sourceCode" id="cb16">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> shopping:</span>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a>    <span class="bu">print</span>(item)</span></code></pre>
+</div>
+<div class="codewrapper sourceCode" id="cb17">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(shopping)):</span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a>    <span class="bu">print</span>(shopping[i])</span></code></pre>
+</div>
+<p>They should be exactly the same: <code>range()</code> behaves as it
+does so that you can use it to index lists (and other sequence data
+types).</p>
+<p>The first is an example of a direct loop, in which you pull out the
+items one by one directly from the list. The second is an indirect list,
+where you step through the indices and use them to get the required
+elements from the list.</p>
+<p>Which one is better? Generally, the direct method is slightly clearer
+and a bit more <em>Pythonic</em>. However, there are circumstances where
+an indirect loop is a bit clearer. If you have two lists of the same
+size, you might need to print out the corresponding elements of the two
+lists (although there might be better ways to do this, as well). In this
+case, you can use <code>range()</code> with the size of one of the
+lists, and then use the index to get the elements of both lists.</p>
+<div id="iterating-over-lists-with-ranges" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="iterating-over-lists-with-ranges" class="callout-inner">
+<h3 class="callout-title">Iterating Over Lists with Ranges</h3>
+<div class="callout-content">
+<p>Start with your shopping list and create a new list with the amounts
+you need to buy of each item. So for example:</p>
+<div class="codewrapper sourceCode" id="cb18">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a>shopping <span class="op">=</span> [<span class="st">'bicycle pump'</span>, <span class="st">'sofa'</span>, <span class="st">'yellow paint'</span>]</span>
+<span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a>amounts <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">7</span>, <span class="dv">9</span>]</span></code></pre>
+</div>
+<p>then write a loop to step through and print the item and the amount
+on the same line.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb19">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(shopping)):</span>
+<span id="cb19-2"><a href="#cb19-2" tabindex="-1"></a>    <span class="bu">print</span>(shopping[i], amounts[i])</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>bicycle pump 1
+sofa 7
+yellow paint 9</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="enumerating-lists">Enumerating Lists<a class="anchor" aria-label="anchor" href="#enumerating-lists"></a></h2>
+<hr class="half-width"><p>That all works fine, but it’s not generally considered to be a very
+Pythonic way of doing things. Why? Because you are introducing a new
+list (with the <code>range()</code> function), that you use to step
+through two other pre-existing lists. It’s not a huge problem, and if
+you are happy using this kind of approach, then feel free to use it.
+However, Python provides you with another possibility, which is the
+<code>enumerate()</code> function. Enumerate again lets you step through
+a list, but rather than returning just the elements of the list, with
+each element it also gives you the index of that element in the list.
+You can then use that index to e.g., look up values in other lists. So
+the solution to the above exercise could look like this:</p>
+<div class="codewrapper sourceCode" id="cb21">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a>shopping <span class="op">=</span> [<span class="st">'bicycle pump'</span>, <span class="st">'sofa'</span>, <span class="st">'yellow paint'</span>]</span>
+<span id="cb21-2"><a href="#cb21-2" tabindex="-1"></a>amounts <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">7</span>, <span class="dv">9</span>]</span>
+<span id="cb21-3"><a href="#cb21-3" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" tabindex="-1"></a><span class="cf">for</span> i, item <span class="kw">in</span> <span class="bu">enumerate</span>(shopping):</span>
+<span id="cb21-5"><a href="#cb21-5" tabindex="-1"></a>    <span class="bu">print</span>(item, amounts[i])</span></code></pre>
+</div>
+<p>This looks a bit odd the first time you see it, so it’s worth looking
+at a couple of things just to clarify what is happening. The first thing
+to try is look at what <code>enumerate()</code> does:</p>
+<div class="codewrapper sourceCode" id="cb22">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="bu">list</span>(<span class="bu">enumerate</span>(shopping))</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>[(0, 'bicycle pump'), (1, 'sofa'), (2, 'yellow paint')]</code></pre>
+</div>
+<p>This is a list of pairs of values in parentheses (these are tuples,
+of which more in a moment…). The <code>for</code> loop goes through each
+of these tuples in turn, and “unpacks” them into the two variables:
+<code>i</code> and <code>item</code>. Unpacking is something that tends
+to happen a lot in Python programs, usually because it makes the code
+more readable. It most commonly occurs in <code>for</code> loops, but
+you can do it anywhere where you need to split a list (or tuple) into a
+number of variables, for example:</p>
+<div class="codewrapper sourceCode" id="cb24">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a>number, <span class="bu">type</span> <span class="op">=</span> (<span class="dv">0</span>, <span class="st">'bicycle pump'</span>)</span></code></pre>
+</div>
+</section><section><h2 class="section-heading" id="string-formatting">String Formatting<a class="anchor" aria-label="anchor" href="#string-formatting"></a></h2>
+<hr class="half-width"><p>When you print out pairs of values, like in the exercise above, the
+output is a bit boring. It’s just a name and a number on a line. It
+could be a bit prettier, or at least more nicely formatted. You can put
+a few extra strings in there to make it clearer like this:</p>
+<div class="codewrapper sourceCode" id="cb25">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"I need to buy"</span>, amounts[i], shopping[i])</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>I need to buy 7 sofa</code></pre>
+</div>
+<p>This is fine, but it is difficult to control the formatting,
+particularly when you are mixing numbers and strings. Most programming
+languages have some function or facility for creating formatted strings
+and Python is no exception. In Python’s case, you start with a string
+into which you wish to insert the values of your variables, with the
+characters <code>{}</code> at the point where you want the value to
+appear. You then call that string’s <code>.format()</code> method, with
+the variables you want to insert in the brackets.</p>
+<div class="codewrapper sourceCode" id="cb27">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a>s <span class="op">=</span> <span class="st">"I need to buy </span><span class="sc">{:d}</span><span class="st"> </span><span class="sc">{:s}</span><span class="st">"</span>.<span class="bu">format</span>(<span class="dv">7</span>, <span class="st">'snakes'</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>I need to buy 7 snakes</code></pre>
+</div>
+<p>Don’t we all? In the format string, the <code>:d</code> indicates
+that you are expecting to put an integer in that position (d stands for
+“decimal” i.e., it puts the base-10 representation of the number at that
+point - you can use <code>:h</code> and <code>:o</code> for hexadecimal
+or octal respectively if you need to). The <code>:s</code> indicates a
+string is required, but if the value you give is not a string, Python
+usually knows how to convert it into one. You can modify these in
+different ways, for example <code>:03d</code> would take your number and
+make sure that it is at least three digits long, filling with zeros if
+necessary. So <code>7</code> would appear in the formatted string as
+<code>007</code>. The full list of different formats and modifiers is on
+the Cheat Sheet.</p>
+<p>This is actually just one way of formatting strings in Python, each
+of which has its own strengths and weaknesses, and which one you choose
+might depends on exactly what your program is trying to do. The latest
+version of string formatting, only added in Python version 3.6, are
+so-called “f-strings”. These look similar to the above, but you can put
+the name of a variable in the braces to use the value of that variable
+in the string.</p>
+<div class="codewrapper sourceCode" id="cb29">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"I need to buy </span><span class="sc">{</span>amounts[i]<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>shopping[i]<span class="sc">}</span><span class="ss">”)</span></span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>I need to buy 7 sofa</code></pre>
+</div>
+<p>As with the <code>.format()</code> method, you can specify the
+required data type and formatting options for each variable using the
+same <code>:03d</code> style syntax.</p>
+<div id="iterating-over-lists-with-formatted-strings" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="iterating-over-lists-with-formatted-strings" class="callout-inner">
+<h3 class="callout-title">Iterating Over Lists with Formatted
+Strings</h3>
+<div class="callout-content">
+<p>Change your program to print out a formatted string for each of the
+items in your shopping list along with the amount you need to buy of
+that item.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
+</button>
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb31">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a>shopping <span class="op">=</span> [<span class="st">'bicycle pump'</span>, <span class="st">'sofa'</span>, <span class="st">'yellow paint'</span>]</span>
+<span id="cb31-2"><a href="#cb31-2" tabindex="-1"></a>amounts <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">7</span>, <span class="dv">9</span>]</span>
+<span id="cb31-3"><a href="#cb31-3" tabindex="-1"></a></span>
+<span id="cb31-4"><a href="#cb31-4" tabindex="-1"></a><span class="cf">for</span> i, item <span class="kw">in</span> <span class="bu">enumerate</span>(shopping):</span>
+<span id="cb31-5"><a href="#cb31-5" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"I need to buy </span><span class="sc">{</span>amounts[i]<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>item<span class="sc">}</span><span class="ss">"</span>)</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>I need to buy 1 bicycle pump
+I need to buy 7 sofa
+I need to buy 9 yellow paint</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="looking-up-data">Looking Up Data<a class="anchor" aria-label="anchor" href="#looking-up-data"></a></h2>
+<hr class="half-width"><p>Keeping data in parallel lists like this is fine if you are really,
+really careful and you don’t need to change the lists that much.
+Otherwise, it is prone to errors. One way of getting round this is to
+use a new data type called a dictionary. Dictionaries are sort of like
+lists, but instead of holding just a single value, they hold a key-value
+pair, so when you are looking up a value in the dictionary you supply
+the key and the dictionary returns the value, rather than just using an
+index. For example:</p>
+<div class="codewrapper sourceCode" id="cb33">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" tabindex="-1"></a>student_numbers <span class="op">=</span> { <span class="st">"Bioscience Technology"</span>: <span class="dv">16</span>, </span>
+<span id="cb33-2"><a href="#cb33-2" tabindex="-1"></a>                    <span class="st">"Computational Biology"</span>: <span class="dv">12</span>,</span>
+<span id="cb33-3"><a href="#cb33-3" tabindex="-1"></a>                    <span class="st">"Post-Genomic Biology"</span>: <span class="dv">20</span>,</span>
+<span id="cb33-4"><a href="#cb33-4" tabindex="-1"></a>                    <span class="st">"Ecology and Environmental Management"</span>: <span class="dv">3</span>,</span>
+<span id="cb33-5"><a href="#cb33-5" tabindex="-1"></a>                    <span class="st">"Maths in the Living Environment"</span>: <span class="dv">0</span></span>
+<span id="cb33-6"><a href="#cb33-6" tabindex="-1"></a>                    }</span>
+<span id="cb33-7"><a href="#cb33-7" tabindex="-1"></a></span>
+<span id="cb33-8"><a href="#cb33-8" tabindex="-1"></a>student_numbers[<span class="st">"Bioscience Technology"</span>]</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code><span><span class="fl">16</span></span></code></pre>
+</div>
+<p>The data is enclosed in curly brackets and is a comma-separated list
+of key-value pairs. The key and value are separated by a colon. The key
+can be any immutable type (so, mainly strings, numbers or tuples).
+Notice I have split the assignment statement to create the dictionary
+over several lines. Python normally expects a command to be on a single
+line, but sometimes it can work out when a statement is not finished,
+for example, when you haven’t closed a set of brackets. Python will
+continue to prompt for input until you close the bracket properly before
+trying to execute the command.</p>
+<p>Dictionaries themselves are a mutable datatype, so the values
+associated with a key can be changed:</p>
+<div class="codewrapper sourceCode" id="cb35">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" tabindex="-1"></a>student_numbers[<span class="st">"Bioscience Technology"</span>] <span class="op">+=</span> <span class="dv">1</span></span></code></pre>
+</div>
+<p>and if you try to assign a value to a key that doesn’t exist, Python
+creates the entry for you automatically.</p>
+<div class="codewrapper sourceCode" id="cb36">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" tabindex="-1"></a>student_numbers[<span class="st">"Gardening"</span>] <span class="op">=</span> <span class="dv">10</span></span></code></pre>
+</div>
+<p>Of course, getting rid of entries in the dictionary is easy as
+well:</p>
+<div class="codewrapper sourceCode" id="cb37">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" tabindex="-1"></a><span class="kw">del</span> student_numbers[<span class="st">"Maths in the Living Environment"</span>]</span></code></pre>
+</div>
+<p>If we know the keys in the dictionary we can look up the values. If
+we want to loop over the values in the dictionary, we could create a
+list of the keys and loop over that, but that’s no better than keeping
+the keys and values in separate lists. Instead, Python can create a list
+of the keys for you when you need it.</p>
+<div class="codewrapper sourceCode" id="cb38">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a>student_numbers.keys()</span></code></pre>
+</div>
+<p>We can now put this into a <code>for</code> loop, with or without
+sorting it first. If we are not bothered about the order (and Python
+doesn’t make any promises about the order the keys will be supplied in,
+they will be the order that is most efficient for Python to store and
+look up the keys. It almost certainly won’t be either the order the keys
+were added to the dictionary or alphabetical order), then we can just
+just loop directly over the dictionary:</p>
+<div class="codewrapper sourceCode" id="cb39">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> student_numbers:</span>
+<span id="cb39-2"><a href="#cb39-2" tabindex="-1"></a>    <span class="bu">print</span>(item, student_numbers[item])</span></code></pre>
+</div>
+<p>That should work as expected. Notice here there is a blank line at
+the end of the loop. This is only required when you are executing loops
+interactively and it’s just so that Python knows you have got to the end
+of the block (or suite) of code that you want to be inside the loop.</p>
+<p>As well as getting the keys, you could also get the values as a list
+using <code>.values()</code>. Slightly more efficient is to get the
+key-value pairs in one step using:</p>
+<div class="codewrapper sourceCode" id="cb40">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" tabindex="-1"></a>student_numbers.items()</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>[('Gardening', 10), ('Computational Biology', 10), ('Post-Genomic
+Biology', 20), ('Bioscience Technology', 16), ('Ecology and
+Environmental Management', 3)]</code></pre>
+</div>
+<p>Have a <strong>careful</strong> look at this output. The square
+brackets show that this is a list of things. But each item in that list
+is in fact two pieces of data in round brackets. When you do have
+several items in (round) brackets (parentheses) like this, it is
+actually a new data type which is a variant of a list, called a
+tuple.</p>
+<p>The main difference between a list and a tuple is that tuples are
+immutable. Once it is defined, it cannot be changed again, you can’t add
+items to it or change what is in a particular place in the tuple. They
+can be useful in a lot of circumstances, particularly where you need to
+be strict about the contents of a list.</p>
+<p>One example is when you are dealing with coordinates, where you need
+to be sure that your coordinate sets are of a particular size. However,
+there is nothing you can do with a tuple that you can’t do with a list.
+There are two ways we can use this in a <code>for</code> loop. Firstly,
+we can use a variable which will contain the tuple and unpack it in the
+body of the loop:</p>
+<div class="codewrapper sourceCode" id="cb42">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" tabindex="-1"></a><span class="cf">for</span> data <span class="kw">in</span> student_numbers.items():</span>
+<span id="cb42-2"><a href="#cb42-2" tabindex="-1"></a>    <span class="bu">print</span>(data[<span class="dv">0</span>], data[<span class="dv">1</span>])</span></code></pre>
+</div>
+<p>or you can unpack the data directly in the <code>for</code>
+statement:</p>
+<div class="codewrapper sourceCode" id="cb43">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" tabindex="-1"></a><span class="cf">for</span> course, students <span class="kw">in</span> student_numbers.items():</span>
+<span id="cb43-2"><a href="#cb43-2" tabindex="-1"></a>    <span class="bu">print</span>(course, students)</span></code></pre>
+</div>
+<p>If you are putting the data into a formatted string, you will need to
+put the data into a tuple to use the interpolation operator, so you can
+exploit the fact that Python gives it to you in a tuple directly:</p>
+<div class="codewrapper sourceCode" id="cb44">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" tabindex="-1"></a><span class="cf">for</span> data <span class="kw">in</span> student_numbers.items():</span>
+<span id="cb44-2"><a href="#cb44-2" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Course '</span><span class="sc">%s</span><span class="st">' has </span><span class="sc">%d</span><span class="st"> students"</span> <span class="op">%</span> data)</span></code></pre>
+</div>
+<p>This is our first example of a compound data structure (in this case,
+a list of tuples). The ability to construct arbitrarily complex data
+structures like this easily is one of the most powerful features of
+Python and one we will explore more in the next worksheet.</p>
+<div id="iterating-over-dictionaries" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="iterating-over-dictionaries" class="callout-inner">
+<h3 class="callout-title">Iterating Over Dictionaries</h3>
+<div class="callout-content">
+<p>We are nearly finished shopping now and all we need to do is change
+the program so that the amounts and items are stored in a dictionary and
+print out the items and amounts by looping over the dictionary.</p>
+<p>Do it twice, once looping over the the dictionary to get the keys (or
+use the keys) and once by getting the key-value pairs directly from the
+dictionary.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
+  <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
+</button>
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb45">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" tabindex="-1"></a>shopping <span class="op">=</span> {<span class="st">'bicycle pump'</span>: <span class="dv">1</span>,</span>
+<span id="cb45-2"><a href="#cb45-2" tabindex="-1"></a>            <span class="st">'sofa'</span>: <span class="dv">7</span>,</span>
+<span id="cb45-3"><a href="#cb45-3" tabindex="-1"></a>            <span class="st">'yellow paint'</span>: <span class="dv">9</span></span>
+<span id="cb45-4"><a href="#cb45-4" tabindex="-1"></a>            }</span>
+<span id="cb45-5"><a href="#cb45-5" tabindex="-1"></a></span>
+<span id="cb45-6"><a href="#cb45-6" tabindex="-1"></a><span class="cf">for</span> item <span class="kw">in</span> shopping:</span>
+<span id="cb45-7"><a href="#cb45-7" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"I need to buy </span><span class="sc">{</span>shopping[item]<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>item<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb45-8"><a href="#cb45-8" tabindex="-1"></a></span>
+<span id="cb45-9"><a href="#cb45-9" tabindex="-1"></a><span class="cf">for</span> item, amount <span class="kw">in</span> shopping.items():</span>
+<span id="cb45-10"><a href="#cb45-10" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"I need to buy </span><span class="sc">{</span>amount<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>item<span class="sc">}</span><span class="ss">"</span>)</span></code></pre>
+</div>
+<div class="codewrapper">
+<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="output" tabindex="0"><code>I need to buy 1 bicycle pump
+I need to buy 7 sofa
+I need to buy 9 yellow paint
+
+I need to buy 1 bicycle pump
+I need to buy 7 sofa
+I need to buy 9 yellow paint</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="summary">Summary<a class="anchor" aria-label="anchor" href="#summary"></a></h2>
+<hr class="half-width"><ul><li>
+<code>for</code> loops can be used to repeat a block of code for
+each item in a list.</li>
+<li>
+<code>range()</code> can be used to create a list of numbers, so you
+can execute the statements within the loop a given number of times.
+Specifically, <code>range()</code> returns a “generator object” which
+will return the numbers to you one by one. This saves memory space when
+the range of numbers you need to use is large, but if you actually need
+a list, calling <code>list(range(&lt;number&gt;))</code> will get all
+the numbers for you.</li>
+<li>
+<code>if:</code> <code>elif:</code> <code>else:</code> statements
+can be used to choose one of a number of optional blocks of code
+depending on the conditions in the <code>if</code> and <code>elif</code>
+clauses.</li>
+<li>String interpolation allows you to insert values into a string,
+enabling sophisticated formatting.</li>
+<li>Tuples are a new data type which are like fixed lists, which can’t
+be changed once they are created.</li>
+<li>Dictionaries are another data type which stores key-value
+pairs.</li>
+<li>The <code>.keys()</code>, <code>.values()</code> and
+<code>.items()</code> methods are used to get lists of the contents of a
+dictionary. <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- --></section></div> <!-- / div.lesson-content -->
+ -->
+</li>
+</ul></section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="01_Getting_Started.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="03_Input_and_Output.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -563,8 +1089,8 @@ any links that you are not going to use.
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Getting Started
         </a>
-        <a class="chapter-link float-end" href="index.html" rel="next">
-          Home
+        <a class="chapter-link float-end" href="03_Input_and_Output.html" rel="next">
+          Next: Input and Output...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -581,14 +1107,14 @@ any links that you are not going to use.
 	
         | <a href="https://github.com/carpentries/workbench-template-md/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
         | <a href="https://github.com/carpentries/workbench-template-md/" class="external-link">Source</a></p>
-				<p><a href="https://github.com/carpentries/workbench-template-md/blob/main/CITATION.cff" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
+				<p><a href="https://github.com/carpentries/workbench-template-md/blob/main/" class="external-link">Cite</a> | <a href="mailto:team@carpentries.org">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
 			</div>
 			<div class="col-md-6">
 
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.17.1" class="external-link">sandpaper (0.17.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/sandyjmacdonald/varnish/tree/e769a0b6834538e361d64be45ffb352c6b923ec3" class="external-link">varnish (1.0.7.9000)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.17.3" class="external-link">sandpaper (0.17.3)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/sandyjmacdonald/varnish/tree/e769a0b6834538e361d64be45ffb352c6b923ec3" class="external-link">varnish (1.0.7.9000)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -610,8 +1136,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/02_Beginning_to_Program.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/02_Beginning_to_Program.html",
   "dateCreated": "2025-07-16",
-  "dateModified": "2025-08-06",
-  "datePublished": "2025-12-02"
+  "dateModified": "2026-01-13",
+  "datePublished": "2026-01-13"
 }
 
   </script><script>
