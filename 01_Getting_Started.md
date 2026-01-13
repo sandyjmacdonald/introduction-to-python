@@ -244,9 +244,7 @@ s.title()
 ```
 
 ```output
->>> s.capitalize()
 'The quick brown fox jumps over the lazy dog'
->>> s.title()
 'The Quick Brown Fox Jumps Over The Lazy Dog'
 ```
 

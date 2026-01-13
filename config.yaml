@@ -68,6 +68,7 @@ contact: 'team@carpentries.org' # FIXME
 episodes: 
 - 01_Getting_Started.md
 - 02_Beginning_to_Program.md
+- 03_Input_and_Output.md
 
 # Information for Learners
 learners: 
