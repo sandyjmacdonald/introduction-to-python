@@ -230,7 +230,7 @@ produces a histogram with 50 pink bars instead of the default of ten blue ones. 
 
 If you Google “matplotlib hist”, you should be able to find the full set of possible options and see if you can reproduce this figure:
 
-![Example of matplotlib customised plot](fig/03_matplotlib-stacked_histogram.jpg)
+![Example of matplotlib customised plot](fig/03_matplotlib_stacked_histogram.jpg)
 
 :::::::::::::::: solution
 
