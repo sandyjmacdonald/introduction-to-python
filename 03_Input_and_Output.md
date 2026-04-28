@@ -4,6 +4,12 @@ teaching: 10 # teaching time in minutes
 exercises: 2 # exercise time in minutes
 ---
 
+<style>
+[data-bs-theme=dark] img.dark-filter.figure {
+  filter: none !important;
+}
+</style>
+
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - What is a function?
@@ -258,3 +264,9 @@ plt.show()
 :::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::
 
+## Summary
+
+* The Python `open()` function opens a file and returns a file object that can be used to access the contents of the file.
+* Methods of the file object, such as `.readline()` or `.readlines()` can be used to get data from the file.
+* All data from files is read by Python as a string data type, so might need converting if it represents other data, using functions such as `str()`, `int()` or `float()`.
+* matplotlib can be used to display data simply and easily. However, it is only one of many modules designed to plot data graphically.

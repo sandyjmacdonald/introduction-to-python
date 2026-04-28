@@ -4,6 +4,12 @@ teaching: 10 # teaching time in minutes
 exercises: 2 # exercise time in minutes
 ---
 
+<style>
+[data-bs-theme=dark] img.dark-filter.figure {
+  filter: none !important;
+}
+</style>
+
 :::::::::::::::::::::::::::::::::::::: questions 
 
 - Do you know what a variable in Python is?
