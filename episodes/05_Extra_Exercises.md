@@ -61,7 +61,7 @@ for n in range(1,51):
 
 ## Word Usage by Shakespeare
 
-On the course web page, you can download a plain text file containing the complete works of Shakespeare (well, the plays and sonnets).
+From the course GitHub repository ([https://github.com/sandyjmacdonald/intro-python-course](https://github.com/sandyjmacdonald/intro-python-course)), you can download a plain text file containing the complete works of Shakespeare (well, the plays and sonnets). Once downloaded, upload it to your Colab session using the **Files** panel as described in Episode 3.
 
 You should be fairly familiar now with the idea of reading through a file one line at a time, and splitting the line to get a list of "words". That should help you to get started. You will notice fairly quickly that you will run into a couple of issues. Some things to consider:
 
