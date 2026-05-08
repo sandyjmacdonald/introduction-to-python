@@ -29,7 +29,13 @@ exercises: 2 # exercise time in minutes
 
 ## First Steps in Programming
 
-So far, it’s been fun playing with commands at the Python prompt, but now we are going to need to start editing programs properly and saving them so that we can change them and re-use parts later. So, on your Spyder menu, click on `File->New file…` and a new tab will open in the Editor pane (the large one occupying the left half of the Spyder window; it will have the title `"untitled0.py"`). This will contain a couple of lines that begin with a # character which will tells Python not to execute the content of the lines (these are called "comments" and are incredibly useful) and some lines between triple-quotes, called a docstring. Underneath these lines, you can start typing you own program.
+So far, it’s been fun playing with commands in Colab cells, but now we are going to need to start writing multi-line programs. In Colab, you do this in a code cell — you can write as many lines as you like in a single cell. To add a new code cell, click the **"+ Code"** button near the top of the notebook, or hover between cells and click the **"+ Code"** button that appears. It is good practice to add a comment at the top of your code to describe what it does. Comments begin with a `#` character, which tells Python to ignore the rest of that line.
+
+![Adding a new code cell in Google Colab](fig/02_colab_new_cell.jpg){alt="Screenshot showing how to add a new code cell in Google Colab"}
+
+> **[SCREENSHOT NEEDED: `fig/02_colab_new_cell.jpg`]** *Screenshot of a Colab notebook showing the "+ Code" button near the top of the notebook (or the hover button that appears between cells), with an empty code cell ready for input.*
+
+Start by entering the following code into a new cell. (You can remove the remainder of the line after the placeholder — XXX)…` and a new tab will open in the Editor pane (the large one occupying the left half of the Spyder window; it will have the title `"untitled0.py"`). This will contain a couple of lines that begin with a # character which will tells Python not to execute the content of the lines (these are called "comments" and are incredibly useful) and some lines between triple-quotes, called a docstring. Underneath these lines, you can start typing you own program.
 
 Start by entering the following code:
 
