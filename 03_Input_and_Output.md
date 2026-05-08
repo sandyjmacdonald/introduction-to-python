@@ -111,9 +111,7 @@ We have now met a few of Python’s most common data types (there are a lot more
 
 Download them by clicking the green **"Code"** button, then **"Download ZIP"**, and unzip the folder. The first file you need is called `seq_lengths.txt`. To use this file in Colab, you need to upload it to the Colab session. Click the **Files** icon (the folder icon) in the left-hand sidebar, then click the **Upload to session storage** button (the upward-arrow icon) and select `seq_lengths.txt` from your computer.
 
-![Uploading a file in Google Colab](fig/03_colab_file_upload.jpg){alt="Screenshot showing the Files panel in Google Colab with the upload button highlighted"}
-
-> **[SCREENSHOT NEEDED: `fig/03_colab_file_upload.jpg`]** *Screenshot showing the Colab left sidebar with the Files panel open, the upload button (upward-arrow icon) highlighted, and `seq_lengths.txt` visible in the file list after a successful upload.*
+![Uploading a file in Google Colab](fig/03_colab_file_upload.png){alt="Screenshot showing the Files panel in Google Colab with the upload button highlighted"}
 
 Once uploaded, the file will appear in the file list and Python can open it using just the filename (no folder path needed), since uploaded files land in the current working directory (`/content/`).
 

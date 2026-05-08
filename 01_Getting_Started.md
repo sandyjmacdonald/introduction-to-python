@@ -33,9 +33,7 @@ Python itself normally exists just to run programs that you have written, but it
 
 For this course, we will be using Google Colab, a free, cloud-based Python environment that runs entirely in your browser — no installation required. To get started, go to [https://colab.research.google.com](https://colab.research.google.com) and sign in with a Google account. Click **"New notebook"** to create a new notebook, and you should see an interface like the one below.
 
-![Google Colab interface](fig/01_colab_interface.jpg){alt="Screenshot of the Google Colab interface showing a new notebook"}
-
-> **[SCREENSHOT NEEDED: `fig/01_colab_interface.jpg`]** *Screenshot of a freshly opened Google Colab notebook, showing the menu bar at the top, the notebook title field, and an empty code cell with the play button (▶) to its left.*
+![Google Colab interface](fig/01_colab_interface.png){alt="Screenshot of the Google Colab interface showing a new notebook"}
 
 The main way you interact with Python in Colab is through **cells**. You type Python commands into a code cell and run it by pressing **Shift+Enter** (which runs the cell and moves to the next one) or **Ctrl+Enter** (which runs the cell and stays). The output appears directly below the cell. You can have as many cells as you like in a notebook, and they all share the same Python session.
 
