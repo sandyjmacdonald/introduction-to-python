@@ -41,7 +41,7 @@ This may sound daunting at first look, but you have already done most of what we
 
 ## Reading in the Data
 
-You should have already downloaded the file containing the data (`rna_seq_data.txt`) from [https://github.com/sandyjmacdonald/intro-python-course](https://github.com/sandyjmacdonald/intro-python-course). Again, make sure that it is moved into the same folder where you have been saving your Python programs. We will start simple, just by opening the file at the Python shell.
+You should have already downloaded the file containing the data (`rna_seq_data.txt`) from [https://github.com/sandyjmacdonald/intro-python-course](https://github.com/sandyjmacdonald/intro-python-course). Upload it to your Colab session using the **Files** panel in the left-hand sidebar, exactly as you did with `seq_lengths.txt` in Episode 3. We will start simple, just by opening the file in a new code cell.
 
 ```python
 f = open('rna_seq_data.txt', 'r')
@@ -49,7 +49,7 @@ f = open('rna_seq_data.txt', 'r')
 
 ## Loading the Data
 
-If you open the file in a text editor (we like Sublime Text), you will see that it consists of a large number of lines (>25,000) with several values, which are separated by tab characters. You could also open the file in Excel, and you will see that there are four columns in there which have the headings “id”, “name”, “pvalue” and “logFC”. These are the ID of the gene, gene name, p-value (probability of getting this result by chance if there is no change in gene expression between the two conditions) and the log2 fold-change difference in gene expression.
+If you open the file in a text editor or spreadsheet application, you will see that it consists of a large number of lines (>25,000) with several values, which are separated by tab characters. You could also open the file in Excel, and you will see that there are four columns in there which have the headings “id”, “name”, “pvalue” and “logFC”. These are the ID of the gene, gene name, p-value (probability of getting this result by chance if there is no change in gene expression between the two conditions) and the log2 fold-change difference in gene expression.
 
 ::::::::::::::::::::::::::::::::::::: challenge
 

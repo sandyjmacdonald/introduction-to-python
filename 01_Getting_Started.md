@@ -31,11 +31,13 @@ exercises: 2 # exercise time in minutes
 
 Python itself normally exists just to run programs that you have written, but it can run as a program in its own right, allowing you to explore the language by typing commands which it then executes for you. Quite a lot can be done at this command prompt, but to do anything serious you will need to start creating your programs in a text editor and executing them with Python. However, we will start by looking at what you can do at the Python prompt.
 
-Python is already installed on the computers in this room (and hopefully on your own machine now) and there is an Anaconda Python program group containing a number of items (`Start Menu->All Programs->Programming Tools->Anaconda 3 (64-bit)`). The two which concern us at the moment are "Spyder" and, maybe, "Anaconda Prompt". For the moment, click the Spyder icon and a window like the one below should appear. If you are not using Anaconda Python, the distribution that you install should have at the very least an IDLE icon in its program group, which will present a window which will allow you to enter Python statements in a similar way.
+For this course, we will be using Google Colab, a free, cloud-based Python environment that runs entirely in your browser — no installation required. To get started, go to [https://colab.research.google.com](https://colab.research.google.com) and sign in with a Google account. Click **"New notebook"** to create a new notebook, and you should see an interface like the one below.
 
-![Idle window](fig/01_idle_window.jpg){alt="Screenshot of an Idle window"}
+![Google Colab interface](fig/01_colab_interface.jpg){alt="Screenshot of the Google Colab interface showing a new notebook"}
 
-This might look daunting at first sight, but for the moment, you just need to concentrate on the panel in the lower right of the screen, that has the title "Console...". If you click in this pane, next to the `In [1]:` prompt, you should get a flashing cursor, and you can start typing Python commands. It might help for the moment, to drag the dividers the top and left of this pane to make it larger.
+> **[SCREENSHOT NEEDED: `fig/01_colab_interface.jpg`]** *Screenshot of a freshly opened Google Colab notebook, showing the menu bar at the top, the notebook title field, and an empty code cell with the play button (▶) to its left.*
+
+The main way you interact with Python in Colab is through **cells**. You type Python commands into a code cell and run it by pressing **Shift+Enter** (which runs the cell and moves to the next one) or **Ctrl+Enter** (which runs the cell and stays). The output appears directly below the cell. You can have as many cells as you like in a notebook, and they all share the same Python session.
 
 ::::::::::::::::::::::::::::::::::::: challenge 
 
@@ -66,7 +68,7 @@ The Python shell (which is what you are using now) is a great way to experiment 
 
 You are not limited to what you can do at the prompt. You can load modules, look at them to see what they do, play with them. The first versions of the bar charts in Worksheet 4 were all produced at the Python prompt, which enabled me to tweak them to see exactly how I wanted them before writing the program to produce the whole figure. This meant I could see how they looked after every command and get them looking just as I wanted. I could also check the documentation for the modules I wanted to use by typing `help()`. There is a lot of information in there and you will find yourself using it again and again.
 
-The only thing you can’t do, though, is save what you have done, but in Spyder, you just need to click in the Editor pane on the left of the Window, then you can edit a program, then save and run it; we’ll see how to do that in Worksheet 2. When you want to use Python on your own computer, I recommend that you install Anaconda Python, which comes with almost all of the modules you will ever need pre-installed (and makes it simpler for you to install others). You can also install Anaconda on both Mac and Linux as well, and it would be worth it if you are planning on using some of the more complex modules like numpy and matplotlib.
+The only thing you can’t do at the interactive prompt, though, is save what you have done. In Colab, you can add new cells to write and run multi-line programs, and your notebook is automatically saved to Google Drive; we’ll see how to do that in Worksheet 2. If you ever want to use Python on your own computer instead, I recommend installing Anaconda Python, which comes with almost all of the modules you will ever need pre-installed (and makes it simpler for you to install others). Anaconda is available for Windows, Mac and Linux, and is worth installing if you plan to use more complex modules like numpy and matplotlib.
 
 ## Evaluating Expressions
 
@@ -190,17 +192,15 @@ You’ll notice when you type this, that Python doesn’t return anything, and t
 y = 10 / 7
 ```
 
-To look at the values, just type:
+To look at the values, you can type the variable name as the last (or only) line in a cell and Colab will display its value. To see both at once, use `print()`:
 
 ```python
-x
-y
+print(x)
+print(y)
 ```
 
 ```output
->>> x
 3
->>> y
 1.4285714285714286
 ```
 

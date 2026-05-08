@@ -29,9 +29,13 @@ exercises: 2 # exercise time in minutes
 
 ## First Steps in Programming
 
-So far, it’s been fun playing with commands at the Python prompt, but now we are going to need to start editing programs properly and saving them so that we can change them and re-use parts later. So, on your Spyder menu, click on `File->New file…` and a new tab will open in the Editor pane (the large one occupying the left half of the Spyder window; it will have the title `"untitled0.py"`). This will contain a couple of lines that begin with a # character which will tells Python not to execute the content of the lines (these are called "comments" and are incredibly useful) and some lines between triple-quotes, called a docstring. Underneath these lines, you can start typing you own program.
+So far, it’s been fun playing with commands in Colab cells, but now we are going to need to start writing multi-line programs. In Colab, you do this in a code cell — you can write as many lines as you like in a single cell. To add a new code cell, click the **"+ Code"** button near the top of the notebook, or hover between cells and click the **"+ Code"** button that appears. It is good practice to add a comment at the top of your code to describe what it does. Comments begin with a `#` character, which tells Python to ignore the rest of that line.
 
-Start by entering the following code:
+![Adding a new code cell in Google Colab](fig/02_colab_new_cell.jpg){alt="Screenshot showing how to add a new code cell in Google Colab"}
+
+> **[SCREENSHOT NEEDED: `fig/02_colab_new_cell.jpg`]** *Screenshot of a Colab notebook showing the "+ Code" button near the top of the notebook (or the hover button that appears between cells), with an empty code cell ready for input.*
+
+Start by entering the following code into a new cell:
 
 ```python
 shopping = ['bread', 'potatoes', 'eggs', 'flour', 'rubber duck', 'pizza', 'milk']
@@ -42,17 +46,13 @@ for item in shopping:
 
 This is a very simple program, which creates a variable that refers to a list, then prints out each of the items in turn. There are a couple of things to comment on here. Firstly, the `for` statement creates the variable `item` (the variable name can of course be anything that you want), then sets the value of this variable to be each of the elements in the list `shopping` in turn. The line which is indented is then executed for each value assigned to the `item` variable and prints out the value.
 
-To execute the program you first need to save it using the `File->Save as…` menu option. You can save the file anywhere you like on your computer (it helps if you remember where), but it is a good idea (particularly under Windows) to give the file an extension of `.py`. This will mean that the computer will recognise it as a Python program. Once you have saved the file, you can press F5 (or choose `Run->Run` from Spyder’s menu, or press the "play" icon in the menu bar).
+To run the cell in Colab, press **Shift+Enter** (runs the cell and moves to the next one) or **Ctrl+Enter** (runs the cell and stays in place), or click the ▶ play button to the left of the cell. The output will appear directly below the cell.
 
-Before the program starts running, a dialog box will appear like this:
+![Running a cell in Google Colab](fig/02_colab_run_cell.jpg){alt="Screenshot showing a code cell being run in Google Colab with output displayed below"}
 
-**INSERT IMAGE HERE**
+> **[SCREENSHOT NEEDED: `fig/02_colab_run_cell.jpg`]** *Screenshot of a Colab notebook showing the shopping list `for` loop in a code cell, with the list items printed as output below the cell. The ▶ play button to the left of the cell should be visible.*
 
-There are a couple of important points here, which might not be obvious.
-
-Firstly, the "Working Directory" option allows you to choose the folder that the program is running in. For most programs, you will need to set this to be the folder that contains e.g., data files that your program needs to read. For the moment, though, you don't need to worry about it.
-
-The second is a bit more subtle. The "Console" options at the top are important. For the moment, you can leave them set at the default option of "Execute in the current Python or IPython console", and the results of the program will appear in the pane on the bottom right of the window. Later on, we will need to choose "Execute in a dedicated Python console" to allow our programs to open up new windows containing the charts that we will produce in Worksheets 3 and 4.
+One important thing to note about Colab notebooks is that all cells share the same Python session. Variables you define in one cell are available in all other cells — but they need to have been run first. If you restart the session (via `Runtime -> Restart session`), you will need to re-run your cells from the top.
 
 Returning to our program, and specifically the "for loop". Whenever we want to execute a piece of Python code several times, this is one of the ways we can do it. Python recognises the lines we want to form part of the loop by the level of indentation and it is vital that you maintain consistent indentation throughout your programs. In fact, though, this is one of the things which leads to your programs being more readable and easier to understand, because visually, you can see the structure of the program at a glance by the indentation.
 
@@ -93,7 +93,7 @@ The output from the previous exercise was:
 
 This looks to me as if it’s worked exactly as I described, but maybe not quite as I intended. We seem to have too many eggs and too much bread. This might not be a problem (and it does illustrate that the same value can be present in a list more than once), but I really just want one copy of each item. What we need to do is check before we add an element that there isn’t a value in there in the first place. Fortunately, Python lets us do this really easily.
 
-For example, if we go back to the IPython Console panel for a minute and try:
+For example, if we try this in a new code cell:
 
 ```python
 shopping = ['eggs', 'cheese', 'milk']
@@ -397,7 +397,7 @@ for item in student_numbers:
     print(item, student_numbers[item])
 ```
 
-That should work as expected.  Notice here there is a blank line at the end of the loop. This is only required when you are executing loops interactively and it’s just so that Python knows you have got to the end of the block (or suite) of code that you want to be inside the loop.
+That should work as expected.
 
 As well as getting the keys, you could also get the values as a list using `.values()`. Slightly more efficient is to get the key-value pairs in one step using:
 

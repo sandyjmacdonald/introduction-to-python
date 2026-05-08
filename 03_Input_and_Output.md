@@ -105,11 +105,21 @@ One of the big advantages that Python has as a programming language is that it i
 
 ## Reading Data From Files
 
-We have now met a few of Python’s most common data types (there are a lot more and, if you like, you can make your own as well) and you should be happy with the ways we can repeat actions on lists and dictionaries with for loops, as well as take decisions based on our data using if statements. We are now going to introduce a new data type, the Python file object. This is Python’s way of letting us get data from files on the computer. The simplest way to explain it is to get a suitable data file and play with it on the command line. We are going to use a couple of separate files in this worksheet, and we will start by downloading them. They can be found here:
+We have now met a few of Python’s most common data types (there are a lot more and, if you like, you can make your own as well) and you should be happy with the ways we can repeat actions on lists and dictionaries with for loops, as well as take decisions based on our data using if statements. We are now going to introduce a new data type, the Python file object. This is Python’s way of letting us get data from files on the computer. We are going to use a couple of separate files in this worksheet. They can be found here:
 
 [Intro to Python files on GitHub](https://github.com/sandyjmacdonald/intro-python-course)
 
-Download them all by clicking the green "Code" button, then "Download ZIP". The first file you need is called `seq_lengths.txt`. Make sure that you move the files, once you've unzipped them, into the same folder where you will save the Python programs that you are going to write to process the data. Let's look at the `seq_lengths.txt` file. This is a simple file which contains the lengths of >10,000 DNA sequences produced in a particular experiment, one per line. What we want to do, at least as a first step, is to read these lengths into a list. We need to start by opening the file, so create a new Python program file, and save it in the same folder where the data file is located.
+Download them by clicking the green **"Code"** button, then **"Download ZIP"**, and unzip the folder. The first file you need is called `seq_lengths.txt`. To use this file in Colab, you need to upload it to the Colab session. Click the **Files** icon (the folder icon) in the left-hand sidebar, then click the **Upload to session storage** button (the upward-arrow icon) and select `seq_lengths.txt` from your computer.
+
+![Uploading a file in Google Colab](fig/03_colab_file_upload.jpg){alt="Screenshot showing the Files panel in Google Colab with the upload button highlighted"}
+
+> **[SCREENSHOT NEEDED: `fig/03_colab_file_upload.jpg`]** *Screenshot showing the Colab left sidebar with the Files panel open, the upload button (upward-arrow icon) highlighted, and `seq_lengths.txt` visible in the file list after a successful upload.*
+
+Once uploaded, the file will appear in the file list and Python can open it using just the filename (no folder path needed), since uploaded files land in the current working directory (`/content/`).
+
+**Note:** Files uploaded this way are temporary and will be lost when your Colab session ends. Simply re-upload at the start of each session, or save your files to Google Drive and mount it via `Runtime -> Mount Drive` for persistent access.
+
+Let’s look at the `seq_lengths.txt` file. This is a simple file which contains the lengths of >10,000 DNA sequences produced in a particular experiment, one per line. What we want to do, at least as a first step, is to read these lengths into a list. We need to start by opening the file, so create a new Python program file, and save it in the same folder where the data file is located.
 
 The first thing we have to do is to open the file. The command to do this is `open()` and this returns a file object, which we will call `f`:
 
@@ -213,7 +223,8 @@ matplotlib is a massive module and contains literally hundreds of possible funct
 
 All you need to do now is to add these to the end of you program, like this:
 
-```pythonplt.figure(1)
+```python
+plt.figure(1)
 plt.hist(data)
 plt.show()
 ```
