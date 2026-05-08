@@ -31,9 +31,7 @@ exercises: 2 # exercise time in minutes
 
 So far, it’s been fun playing with commands in Colab cells, but now we are going to need to start writing multi-line programs. In Colab, you do this in a code cell — you can write as many lines as you like in a single cell. To add a new code cell, click the **"+ Code"** button near the top of the notebook, or hover between cells and click the **"+ Code"** button that appears. It is good practice to add a comment at the top of your code to describe what it does. Comments begin with a `#` character, which tells Python to ignore the rest of that line.
 
-![Adding a new code cell in Google Colab](fig/02_colab_new_cell.jpg){alt="Screenshot showing how to add a new code cell in Google Colab"}
-
-> **[SCREENSHOT NEEDED: `fig/02_colab_new_cell.jpg`]** *Screenshot of a Colab notebook showing the "+ Code" button near the top of the notebook (or the hover button that appears between cells), with an empty code cell ready for input.*
+![Adding a new code cell in Google Colab](fig/02_colab_new_cell.png){alt="Screenshot showing how to add a new code cell in Google Colab"}
 
 Start by entering the following code into a new cell:
 
