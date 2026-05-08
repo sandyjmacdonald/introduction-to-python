@@ -108,11 +108,11 @@
   Introduction to Python Programming
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 75%" class="percentage">
-    75%
+<aside class="col-md-12 lesson-progress"><div style="width: 60%" class="percentage">
+    60%
   </div>
   <div class="progress software">
-    <div class="progress-bar software" role="progressbar" style="width: 75%" aria-valuenow="75" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar software" role="progressbar" style="width: 60%" aria-valuenow="60" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -249,6 +249,15 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="05_Extra_Exercises.html">5. Extra Exercises</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -292,7 +301,7 @@
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="03_Input_and_Output.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="05_Extra_Exercises.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -300,14 +309,14 @@
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Input and Output
         </a>
-        <a class="chapter-link float-end" href="index.html" rel="next">
-          Home
+        <a class="chapter-link float-end" href="05_Extra_Exercises.html" rel="next">
+          Next: Extra Exercises...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Handling Complex Data</h1>
-        <p>Last updated on 2026-04-28 |
+        <p>Last updated on 2026-05-08 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/04_Handling_Complex_Data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -377,16 +386,17 @@ lots of methods together from the first three worksheets.</p>
 </section><section><h2 class="section-heading" id="reading-in-the-data">Reading in the Data<a class="anchor" aria-label="anchor" href="#reading-in-the-data"></a></h2>
 <hr class="half-width"><p>You should have already downloaded the file containing the data
 (<code>rna_seq_data.txt</code>) from <a href="https://github.com/sandyjmacdonald/intro-python-course" class="external-link">https://github.com/sandyjmacdonald/intro-python-course</a>.
-Again, make sure that it is moved into the same folder where you have
-been saving your Python programs. We will start simple, just by opening
-the file at the Python shell.</p>
+Upload it to your Colab session using the <strong>Files</strong> panel
+in the left-hand sidebar, exactly as you did with
+<code>seq_lengths.txt</code> in Episode 3. We will start simple, just by
+opening the file in a new code cell.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a>f <span class="op">=</span> <span class="bu">open</span>(<span class="st">'rna_seq_data.txt'</span>, <span class="st">'r'</span>)</span></code></pre>
 </div>
 </section><section><h2 class="section-heading" id="loading-the-data">Loading the Data<a class="anchor" aria-label="anchor" href="#loading-the-data"></a></h2>
-<hr class="half-width"><p>If you open the file in a text editor (we like Sublime Text), you
+<hr class="half-width"><p>If you open the file in a text editor or spreadsheet application, you
 will see that it consists of a large number of lines (&gt;25,000) with
 several values, which are separated by tab characters. You could also
 open the file in Excel, and you will see that there are four columns in
@@ -809,7 +819,7 @@ any links that you are not going to use.
 </ul></section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="03_Input_and_Output.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="05_Extra_Exercises.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -817,8 +827,8 @@ any links that you are not going to use.
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Input and Output
         </a>
-        <a class="chapter-link float-end" href="index.html" rel="next">
-          Home
+        <a class="chapter-link float-end" href="05_Extra_Exercises.html" rel="next">
+          Next: Extra Exercises...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -864,8 +874,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/04_Handling_Complex_Data.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/04_Handling_Complex_Data.html",
   "dateCreated": "2025-07-16",
-  "dateModified": "2026-04-28",
-  "datePublished": "2026-05-05"
+  "dateModified": "2026-05-08",
+  "datePublished": "2026-05-08"
 }
 
   </script><script>

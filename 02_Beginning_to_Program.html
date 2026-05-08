@@ -108,11 +108,11 @@
   Introduction to Python Programming
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 25%" class="percentage">
-    25%
+<aside class="col-md-12 lesson-progress"><div style="width: 20%" class="percentage">
+    20%
   </div>
   <div class="progress software">
-    <div class="progress-bar software" role="progressbar" style="width: 25%" aria-valuenow="25" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar software" role="progressbar" style="width: 20%" aria-valuenow="20" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -247,6 +247,15 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="05_Extra_Exercises.html">5. Extra Exercises</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -305,7 +314,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Beginning to Program</h1>
-        <p>Last updated on 2026-04-28 |
+        <p>Last updated on 2026-05-08 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/02_Beginning_to_Program.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -349,18 +358,24 @@
 </div>
 </div>
 <section><h2 class="section-heading" id="first-steps-in-programming">First Steps in Programming<a class="anchor" aria-label="anchor" href="#first-steps-in-programming"></a></h2>
-<hr class="half-width"><p>So far, it’s been fun playing with commands at the Python prompt, but
-now we are going to need to start editing programs properly and saving
-them so that we can change them and re-use parts later. So, on your
-Spyder menu, click on <code>File-&gt;New file…</code> and a new tab will
-open in the Editor pane (the large one occupying the left half of the
-Spyder window; it will have the title <code>"untitled0.py"</code>). This
-will contain a couple of lines that begin with a # character which will
-tells Python not to execute the content of the lines (these are called
-“comments” and are incredibly useful) and some lines between
-triple-quotes, called a docstring. Underneath these lines, you can start
-typing you own program.</p>
-<p>Start by entering the following code:</p>
+<hr class="half-width"><p>So far, it’s been fun playing with commands in Colab cells, but now
+we are going to need to start writing multi-line programs. In Colab, you
+do this in a code cell — you can write as many lines as you like in a
+single cell. To add a new code cell, click the <strong>“+ Code”</strong>
+button near the top of the notebook, or hover between cells and click
+the <strong>“+ Code”</strong> button that appears. It is good practice
+to add a comment at the top of your code to describe what it does.
+Comments begin with a <code>#</code> character, which tells Python to
+ignore the rest of that line.</p>
+<figure><img src="fig/02_colab_new_cell.jpg" alt="Screenshot showing how to add a new code cell in Google Colab" class="figure mx-auto d-block"><div class="figcaption">Adding a new code cell in Google Colab</div>
+</figure><blockquote>
+<p><strong>[SCREENSHOT NEEDED:
+<code>fig/02_colab_new_cell.jpg</code>]</strong> <em>Screenshot of a
+Colab notebook showing the “+ Code” button near the top of the notebook
+(or the hover button that appears between cells), with an empty code
+cell ready for input.</em></p>
+</blockquote>
+<p>Start by entering the following code into a new cell:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -377,31 +392,24 @@ be anything that you want), then sets the value of this variable to be
 each of the elements in the list <code>shopping</code> in turn. The line
 which is indented is then executed for each value assigned to the
 <code>item</code> variable and prints out the value.</p>
-<p>To execute the program you first need to save it using the
-<code>File-&gt;Save as…</code> menu option. You can save the file
-anywhere you like on your computer (it helps if you remember where), but
-it is a good idea (particularly under Windows) to give the file an
-extension of <code>.py</code>. This will mean that the computer will
-recognise it as a Python program. Once you have saved the file, you can
-press F5 (or choose <code>Run-&gt;Run</code> from Spyder’s menu, or
-press the “play” icon in the menu bar).</p>
-<p>Before the program starts running, a dialog box will appear like
-this:</p>
-<p><strong>INSERT IMAGE HERE</strong></p>
-<p>There are a couple of important points here, which might not be
-obvious.</p>
-<p>Firstly, the “Working Directory” option allows you to choose the
-folder that the program is running in. For most programs, you will need
-to set this to be the folder that contains e.g., data files that your
-program needs to read. For the moment, though, you don’t need to worry
-about it.</p>
-<p>The second is a bit more subtle. The “Console” options at the top are
-important. For the moment, you can leave them set at the default option
-of “Execute in the current Python or IPython console”, and the results
-of the program will appear in the pane on the bottom right of the
-window. Later on, we will need to choose “Execute in a dedicated Python
-console” to allow our programs to open up new windows containing the
-charts that we will produce in Worksheets 3 and 4.</p>
+<p>To run the cell in Colab, press <strong>Shift+Enter</strong> (runs
+the cell and moves to the next one) or <strong>Ctrl+Enter</strong> (runs
+the cell and stays in place), or click the ▶ play button to the left of
+the cell. The output will appear directly below the cell.</p>
+<figure><img src="fig/02_colab_run_cell.jpg" alt="Screenshot showing a code cell being run in Google Colab with output displayed below" class="figure mx-auto d-block"><div class="figcaption">Running a cell in Google Colab</div>
+</figure><blockquote>
+<p><strong>[SCREENSHOT NEEDED:
+<code>fig/02_colab_run_cell.jpg</code>]</strong> <em>Screenshot of a
+Colab notebook showing the shopping list <code>for</code> loop in a code
+cell, with the list items printed as output below the cell. The ▶ play
+button to the left of the cell should be visible.</em></p>
+</blockquote>
+<p>One important thing to note about Colab notebooks is that all cells
+share the same Python session. Variables you define in one cell are
+available in all other cells — but they need to have been run first. If
+you restart the session (via
+<code>Runtime -&gt; Restart session</code>), you will need to re-run
+your cells from the top.</p>
 <p>Returning to our program, and specifically the “for loop”. Whenever
 we want to execute a piece of Python code several times, this is one of
 the ways we can do it. Python recognises the lines we want to form part
@@ -432,7 +440,7 @@ it to first shopping list.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -468,8 +476,7 @@ value can be present in a list more than once), but I really just want
 one copy of each item. What we need to do is check before we add an
 element that there isn’t a value in there in the first place.
 Fortunately, Python lets us do this really easily.</p>
-<p>For example, if we go back to the IPython Console panel for a minute
-and try:</p>
+<p>For example, if we try this in a new code cell:</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -537,7 +544,7 @@ existing if statement. This will be executed when the condition in the
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -616,7 +623,7 @@ the list: <code>[4, 11, 18, 25]</code>.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -693,7 +700,7 @@ on the same line.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -845,7 +852,7 @@ that item.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb31">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -946,10 +953,7 @@ just loop directly over the dictionary:</p>
 <pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" tabindex="-1" aria-label="code-block-39-1"></a><span class="cf">for</span> item <span class="kw">in</span> student_numbers:</span>
 <span id="cb39-2"><a href="#cb39-2" tabindex="-1" aria-label="code-block-39-2"></a>    <span class="bu">print</span>(item, student_numbers[item])</span></code></pre>
 </div>
-<p>That should work as expected. Notice here there is a blank line at
-the end of the loop. This is only required when you are executing loops
-interactively and it’s just so that Python knows you have got to the end
-of the block (or suite) of code that you want to be inside the loop.</p>
+<p>That should work as expected.</p>
 <p>As well as getting the keys, you could also get the values as a list
 using <code>.values()</code>. Slightly more efficient is to get the
 key-value pairs in one step using:</p>
@@ -1031,7 +1035,7 @@ dictionary.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb45">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1150,8 +1154,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/02_Beginning_to_Program.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/02_Beginning_to_Program.html",
   "dateCreated": "2025-07-16",
-  "dateModified": "2026-04-28",
-  "datePublished": "2026-05-05"
+  "dateModified": "2026-05-08",
+  "datePublished": "2026-05-08"
 }
 
   </script><script>

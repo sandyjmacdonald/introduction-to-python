@@ -279,6 +279,18 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="05_Extra_Exercises.html">5. Extra Exercises</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -335,7 +347,7 @@
         
 <section id="aio-01_Getting_Started"><p>Content from <a href="01_Getting_Started.html">Getting Started</a></p>
 <hr>
-<p>Last updated on 2026-04-28 |
+<p>Last updated on 2026-05-08 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/01_Getting_Started.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -389,23 +401,27 @@ Quite a lot can be done at this command prompt, but to do anything
 serious you will need to start creating your programs in a text editor
 and executing them with Python. However, we will start by looking at
 what you can do at the Python prompt.</p>
-<p>Python is already installed on the computers in this room (and
-hopefully on your own machine now) and there is an Anaconda Python
-program group containing a number of items
-(<code>Start Menu-&gt;All Programs-&gt;Programming Tools-&gt;Anaconda 3 (64-bit)</code>).
-The two which concern us at the moment are “Spyder” and, maybe,
-“Anaconda Prompt”. For the moment, click the Spyder icon and a window
-like the one below should appear. If you are not using Anaconda Python,
-the distribution that you install should have at the very least an IDLE
-icon in its program group, which will present a window which will allow
-you to enter Python statements in a similar way.</p>
-<figure><img src="fig/01_idle_window.jpg" alt="Screenshot of an Idle window" class="figure mx-auto d-block"><div class="figcaption">Idle window</div>
-</figure><p>This might look daunting at first sight, but for the moment, you just
-need to concentrate on the panel in the lower right of the screen, that
-has the title “Console…”. If you click in this pane, next to the
-<code>In [1]:</code> prompt, you should get a flashing cursor, and you
-can start typing Python commands. It might help for the moment, to drag
-the dividers the top and left of this pane to make it larger.</p>
+<p>For this course, we will be using Google Colab, a free, cloud-based
+Python environment that runs entirely in your browser — no installation
+required. To get started, go to <a href="https://colab.research.google.com" class="external-link">https://colab.research.google.com</a>
+and sign in with a Google account. Click <strong>“New notebook”</strong>
+to create a new notebook, and you should see an interface like the one
+below.</p>
+<figure><img src="fig/01_colab_interface.jpg" alt="Screenshot of the Google Colab interface showing a new notebook" class="figure mx-auto d-block"><div class="figcaption">Google Colab interface</div>
+</figure><blockquote>
+<p><strong>[SCREENSHOT NEEDED:
+<code>fig/01_colab_interface.jpg</code>]</strong> <em>Screenshot of a
+freshly opened Google Colab notebook, showing the menu bar at the top,
+the notebook title field, and an empty code cell with the play button
+(▶) to its left.</em></p>
+</blockquote>
+<p>The main way you interact with Python in Colab is through
+<strong>cells</strong>. You type Python commands into a code cell and
+run it by pressing <strong>Shift+Enter</strong> (which runs the cell and
+moves to the next one) or <strong>Ctrl+Enter</strong> (which runs the
+cell and stays). The output appears directly below the cell. You can
+have as many cells as you like in a notebook, and they all share the
+same Python session.</p>
 <div id="hello-world" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -435,7 +451,7 @@ is a string and is what you want the print function to print out.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Output </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -465,15 +481,16 @@ looking just as I wanted. I could also check the documentation for the
 modules I wanted to use by typing <code>help()</code>. There is a lot of
 information in there and you will find yourself using it again and
 again.</p>
-<p>The only thing you can’t do, though, is save what you have done, but
-in Spyder, you just need to click in the Editor pane on the left of the
-Window, then you can edit a program, then save and run it; we’ll see how
-to do that in Worksheet 2. When you want to use Python on your own
-computer, I recommend that you install Anaconda Python, which comes with
-almost all of the modules you will ever need pre-installed (and makes it
-simpler for you to install others). You can also install Anaconda on
-both Mac and Linux as well, and it would be worth it if you are planning
-on using some of the more complex modules like numpy and matplotlib.</p>
+<p>The only thing you can’t do at the interactive prompt, though, is
+save what you have done. In Colab, you can add new cells to write and
+run multi-line programs, and your notebook is automatically saved to
+Google Drive; we’ll see how to do that in Worksheet 2. If you ever want
+to use Python on your own computer instead, I recommend installing
+Anaconda Python, which comes with almost all of the modules you will
+ever need pre-installed (and makes it simpler for you to install
+others). Anaconda is available for Windows, Mac and Linux, and is worth
+installing if you plan to use more complex modules like numpy and
+matplotlib.</p>
 </section><section><h2 class="section-heading" id="evaluating-expressions">Evaluating Expressions<a class="anchor" aria-label="anchor" href="#evaluating-expressions"></a>
 </h2>
 <hr class="half-width">
@@ -563,7 +580,7 @@ can be stored?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>A: You can get Python to store numbers up to
 <code>2 ** 1000000000</code> (2 to the power of 1 billion) fairly
@@ -624,7 +641,7 @@ Theorem.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Raising a number to the power of 0.5 is the same as calculating its
 square root.</p>
@@ -666,20 +683,20 @@ expressions that we tried above:</p>
 </h3>
 <pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" tabindex="-1" aria-label="code-block-16-1"></a>y <span class="op">=</span> <span class="dv">10</span> <span class="op">/</span> <span class="dv">7</span></span></code></pre>
 </div>
-<p>To look at the values, just type:</p>
+<p>To look at the values, you can type the variable name as the last (or
+only) line in a cell and Colab will display its value. To see both at
+once, use <code>print()</code>:</p>
 <div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" tabindex="-1" aria-label="code-block-17-1"></a>x</span>
-<span id="cb17-2"><a href="#cb17-2" tabindex="-1" aria-label="code-block-17-2"></a>y</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" tabindex="-1" aria-label="code-block-17-1"></a><span class="bu">print</span>(x)</span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1" aria-label="code-block-17-2"></a><span class="bu">print</span>(y)</span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code>&gt;&gt;&gt; x
-3
-&gt;&gt;&gt; y
-1.4285714285714286</code></pre>
+<pre class="output" tabindex="0"><code><span><span class="fl">3</span></span>
+<span><span class="fl">1.4285714285714286</span></span></code></pre>
 </div>
 <p>More normally, you would probably output the results using the print
 statement we started with:</p>
@@ -792,7 +809,7 @@ it has done.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>The following does indeed return 1, because only the exact string
 <code>"the"</code> is matched.</p>
@@ -991,7 +1008,7 @@ the fourth word in the words list.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>The 0-based indexing in Python takes a little getting used to but,
 once you do, your brain will automatically translate “real” positions
@@ -1052,7 +1069,7 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  --></section></section><section id="aio-02_Beginning_to_Program"><p>Content from <a href="02_Beginning_to_Program.html">Beginning to Program</a></p>
 <hr>
-<p>Last updated on 2026-04-28 |
+<p>Last updated on 2026-05-08 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/02_Beginning_to_Program.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1097,18 +1114,24 @@ any links that you are not going to use.
 <section><h2 class="section-heading" id="first-steps-in-programming">First Steps in Programming<a class="anchor" aria-label="anchor" href="#first-steps-in-programming"></a>
 </h2>
 <hr class="half-width">
-<p>So far, it’s been fun playing with commands at the Python prompt, but
-now we are going to need to start editing programs properly and saving
-them so that we can change them and re-use parts later. So, on your
-Spyder menu, click on <code>File-&gt;New file…</code> and a new tab will
-open in the Editor pane (the large one occupying the left half of the
-Spyder window; it will have the title <code>"untitled0.py"</code>). This
-will contain a couple of lines that begin with a # character which will
-tells Python not to execute the content of the lines (these are called
-“comments” and are incredibly useful) and some lines between
-triple-quotes, called a docstring. Underneath these lines, you can start
-typing you own program.</p>
-<p>Start by entering the following code:</p>
+<p>So far, it’s been fun playing with commands in Colab cells, but now
+we are going to need to start writing multi-line programs. In Colab, you
+do this in a code cell — you can write as many lines as you like in a
+single cell. To add a new code cell, click the <strong>“+ Code”</strong>
+button near the top of the notebook, or hover between cells and click
+the <strong>“+ Code”</strong> button that appears. It is good practice
+to add a comment at the top of your code to describe what it does.
+Comments begin with a <code>#</code> character, which tells Python to
+ignore the rest of that line.</p>
+<figure><img src="fig/02_colab_new_cell.jpg" alt="Screenshot showing how to add a new code cell in Google Colab" class="figure mx-auto d-block"><div class="figcaption">Adding a new code cell in Google Colab</div>
+</figure><blockquote>
+<p><strong>[SCREENSHOT NEEDED:
+<code>fig/02_colab_new_cell.jpg</code>]</strong> <em>Screenshot of a
+Colab notebook showing the “+ Code” button near the top of the notebook
+(or the hover button that appears between cells), with an empty code
+cell ready for input.</em></p>
+</blockquote>
+<p>Start by entering the following code into a new cell:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1125,31 +1148,24 @@ be anything that you want), then sets the value of this variable to be
 each of the elements in the list <code>shopping</code> in turn. The line
 which is indented is then executed for each value assigned to the
 <code>item</code> variable and prints out the value.</p>
-<p>To execute the program you first need to save it using the
-<code>File-&gt;Save as…</code> menu option. You can save the file
-anywhere you like on your computer (it helps if you remember where), but
-it is a good idea (particularly under Windows) to give the file an
-extension of <code>.py</code>. This will mean that the computer will
-recognise it as a Python program. Once you have saved the file, you can
-press F5 (or choose <code>Run-&gt;Run</code> from Spyder’s menu, or
-press the “play” icon in the menu bar).</p>
-<p>Before the program starts running, a dialog box will appear like
-this:</p>
-<p><strong>INSERT IMAGE HERE</strong></p>
-<p>There are a couple of important points here, which might not be
-obvious.</p>
-<p>Firstly, the “Working Directory” option allows you to choose the
-folder that the program is running in. For most programs, you will need
-to set this to be the folder that contains e.g., data files that your
-program needs to read. For the moment, though, you don’t need to worry
-about it.</p>
-<p>The second is a bit more subtle. The “Console” options at the top are
-important. For the moment, you can leave them set at the default option
-of “Execute in the current Python or IPython console”, and the results
-of the program will appear in the pane on the bottom right of the
-window. Later on, we will need to choose “Execute in a dedicated Python
-console” to allow our programs to open up new windows containing the
-charts that we will produce in Worksheets 3 and 4.</p>
+<p>To run the cell in Colab, press <strong>Shift+Enter</strong> (runs
+the cell and moves to the next one) or <strong>Ctrl+Enter</strong> (runs
+the cell and stays in place), or click the ▶ play button to the left of
+the cell. The output will appear directly below the cell.</p>
+<figure><img src="fig/02_colab_run_cell.jpg" alt="Screenshot showing a code cell being run in Google Colab with output displayed below" class="figure mx-auto d-block"><div class="figcaption">Running a cell in Google Colab</div>
+</figure><blockquote>
+<p><strong>[SCREENSHOT NEEDED:
+<code>fig/02_colab_run_cell.jpg</code>]</strong> <em>Screenshot of a
+Colab notebook showing the shopping list <code>for</code> loop in a code
+cell, with the list items printed as output below the cell. The ▶ play
+button to the left of the cell should be visible.</em></p>
+</blockquote>
+<p>One important thing to note about Colab notebooks is that all cells
+share the same Python session. Variables you define in one cell are
+available in all other cells — but they need to have been run first. If
+you restart the session (via
+<code>Runtime -&gt; Restart session</code>), you will need to re-run
+your cells from the top.</p>
 <p>Returning to our program, and specifically the “for loop”. Whenever
 we want to execute a piece of Python code several times, this is one of
 the ways we can do it. Python recognises the lines we want to form part
@@ -1182,7 +1198,7 @@ it to first shopping list.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1220,8 +1236,7 @@ value can be present in a list more than once), but I really just want
 one copy of each item. What we need to do is check before we add an
 element that there isn’t a value in there in the first place.
 Fortunately, Python lets us do this really easily.</p>
-<p>For example, if we go back to the IPython Console panel for a minute
-and try:</p>
+<p>For example, if we try this in a new code cell:</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1289,7 +1304,7 @@ existing if statement. This will be executed when the condition in the
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1370,7 +1385,7 @@ the list: <code>[4, 11, 18, 25]</code>.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1449,7 +1464,7 @@ on the same line.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1605,7 +1620,7 @@ that item.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb31">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1708,10 +1723,7 @@ just loop directly over the dictionary:</p>
 <pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" tabindex="-1" aria-label="code-block-39-1"></a><span class="cf">for</span> item <span class="kw">in</span> student_numbers:</span>
 <span id="cb39-2"><a href="#cb39-2" tabindex="-1" aria-label="code-block-39-2"></a>    <span class="bu">print</span>(item, student_numbers[item])</span></code></pre>
 </div>
-<p>That should work as expected. Notice here there is a blank line at
-the end of the loop. This is only required when you are executing loops
-interactively and it’s just so that Python knows you have got to the end
-of the block (or suite) of code that you want to be inside the loop.</p>
+<p>That should work as expected.</p>
 <p>As well as getting the keys, you could also get the values as a list
 using <code>.values()</code>. Slightly more efficient is to get the
 key-value pairs in one step using:</p>
@@ -1793,7 +1805,7 @@ dictionary.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb45">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1859,7 +1871,7 @@ any links that you are not going to use.
 </li>
 </ul></section></section><section id="aio-03_Input_and_Output"><p>Content from <a href="03_Input_and_Output.html">Input and Output</a></p>
 <hr>
-<p>Last updated on 2026-04-28 |
+<p>Last updated on 2026-05-08 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/03_Input_and_Output.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1982,7 +1994,7 @@ call:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2035,23 +2047,40 @@ be happy with the ways we can repeat actions on lists and dictionaries
 with for loops, as well as take decisions based on our data using if
 statements. We are now going to introduce a new data type, the Python
 file object. This is Python’s way of letting us get data from files on
-the computer. The simplest way to explain it is to get a suitable data
-file and play with it on the command line. We are going to use a couple
-of separate files in this worksheet, and we will start by downloading
-them. They can be found here:</p>
+the computer. We are going to use a couple of separate files in this
+worksheet. They can be found here:</p>
 <p><a href="https://github.com/sandyjmacdonald/intro-python-course" class="external-link">Intro to
 Python files on GitHub</a></p>
-<p>Download them all by clicking the green “Code” button, then “Download
-ZIP”. The first file you need is called <code>seq_lengths.txt</code>.
-Make sure that you move the files, once you’ve unzipped them, into the
-same folder where you will save the Python programs that you are going
-to write to process the data. Let’s look at the
-<code>seq_lengths.txt</code> file. This is a simple file which contains
-the lengths of &gt;10,000 DNA sequences produced in a particular
-experiment, one per line. What we want to do, at least as a first step,
-is to read these lengths into a list. We need to start by opening the
-file, so create a new Python program file, and save it in the same
-folder where the data file is located.</p>
+<p>Download them by clicking the green <strong>“Code”</strong> button,
+then <strong>“Download ZIP”</strong>, and unzip the folder. The first
+file you need is called <code>seq_lengths.txt</code>. To use this file
+in Colab, you need to upload it to the Colab session. Click the
+<strong>Files</strong> icon (the folder icon) in the left-hand sidebar,
+then click the <strong>Upload to session storage</strong> button (the
+upward-arrow icon) and select <code>seq_lengths.txt</code> from your
+computer.</p>
+<figure><img src="fig/03_colab_file_upload.jpg" alt="Screenshot showing the Files panel in Google Colab with the upload button highlighted" class="figure mx-auto d-block"><div class="figcaption">Uploading a file in Google Colab</div>
+</figure><blockquote>
+<p><strong>[SCREENSHOT NEEDED:
+<code>fig/03_colab_file_upload.jpg</code>]</strong> <em>Screenshot
+showing the Colab left sidebar with the Files panel open, the upload
+button (upward-arrow icon) highlighted, and <code>seq_lengths.txt</code>
+visible in the file list after a successful upload.</em></p>
+</blockquote>
+<p>Once uploaded, the file will appear in the file list and Python can
+open it using just the filename (no folder path needed), since uploaded
+files land in the current working directory
+(<code>/content/</code>).</p>
+<p><strong>Note:</strong> Files uploaded this way are temporary and will
+be lost when your Colab session ends. Simply re-upload at the start of
+each session, or save your files to Google Drive and mount it via
+<code>Runtime -&gt; Mount Drive</code> for persistent access.</p>
+<p>Let’s look at the <code>seq_lengths.txt</code> file. This is a simple
+file which contains the lengths of &gt;10,000 DNA sequences produced in
+a particular experiment, one per line. What we want to do, at least as a
+first step, is to read these lengths into a list. We need to start by
+opening the file, so create a new Python program file, and save it in
+the same folder where the data file is located.</p>
 <p>The first thing we have to do is to open the file. The command to do
 this is <code>open()</code> and this returns a file object, which we
 will call <code>f</code>:</p>
@@ -2189,7 +2218,7 @@ store all of the sequence lengths in a single list.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2249,8 +2278,13 @@ program: <code>plt.figure()</code>, <code>plt.hist()</code> and
 display the figure on the screen, respectively.</p>
 <p>All you need to do now is to add these to the end of you program,
 like this:</p>
-<pre class="pythonplt.figure(1)"><code><span><span class="fu">plt.hist</span><span class="op">(</span><span class="va">data</span><span class="op">)</span></span>
-<span><span class="fu">plt.show</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+<div class="codewrapper sourceCode" id="cb17">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" tabindex="-1" aria-label="code-block-17-1"></a>plt.figure(<span class="dv">1</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1" aria-label="code-block-17-2"></a>plt.hist(data)</span>
+<span id="cb17-3"><a href="#cb17-3" tabindex="-1" aria-label="code-block-17-3"></a>plt.show()</span></code></pre>
+</div>
 <p>When you run the program now, it should show you a figure like
 this:</p>
 <figure><img src="fig/03_matplotlib_histogram.jpg" alt="An example of a matplotlib histogram" class="figure mx-auto d-block"><div class="figcaption">An example of a matplotlib histogram</div>
@@ -2286,7 +2320,7 @@ set of possible options and see if you can reproduce this figure:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -2333,7 +2367,7 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  --></section></section><section id="aio-04_Handling_Complex_Data"><p>Content from <a href="04_Handling_Complex_Data.html">Handling Complex Data</a></p>
 <hr>
-<p>Last updated on 2026-04-28 |
+<p>Last updated on 2026-05-08 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/04_Handling_Complex_Data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -2406,9 +2440,10 @@ lots of methods together from the first three worksheets.</p>
 <hr class="half-width">
 <p>You should have already downloaded the file containing the data
 (<code>rna_seq_data.txt</code>) from <a href="https://github.com/sandyjmacdonald/intro-python-course" class="external-link">https://github.com/sandyjmacdonald/intro-python-course</a>.
-Again, make sure that it is moved into the same folder where you have
-been saving your Python programs. We will start simple, just by opening
-the file at the Python shell.</p>
+Upload it to your Colab session using the <strong>Files</strong> panel
+in the left-hand sidebar, exactly as you did with
+<code>seq_lengths.txt</code> in Episode 3. We will start simple, just by
+opening the file in a new code cell.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -2417,7 +2452,7 @@ the file at the Python shell.</p>
 </section><section><h2 class="section-heading" id="loading-the-data">Loading the Data<a class="anchor" aria-label="anchor" href="#loading-the-data"></a>
 </h2>
 <hr class="half-width">
-<p>If you open the file in a text editor (we like Sublime Text), you
+<p>If you open the file in a text editor or spreadsheet application, you
 will see that it consists of a large number of lines (&gt;25,000) with
 several values, which are separated by tab characters. You could also
 open the file in Excel, and you will see that there are four columns in
@@ -2856,7 +2891,566 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
 </li>
-</ul></section></section>
+</ul></section></section><section id="aio-05_Extra_Exercises"><p>Content from <a href="05_Extra_Exercises.html">Extra Exercises</a></p>
+<hr>
+<p>Last updated on 2026-05-08 |
+
+        <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/05_Extra_Exercises.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+[data-bs-theme=dark] img.dark-filter.figure {
+  filter: none !important;
+}
+</style>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>What more can we use Python for?</li>
+<li>Can we impvove our problem-solving with Python?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Move beyond the basics we’ve learnt thus far</li>
+<li>Learn how to break down a problem and translate it to code</li>
+<li>Use Python for text analysis</li>
+<li>Use Python to retrieve data from the web</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>This worksheet is not as structured as the others, and you don’t need
+to work through all of the challenges below. Feel free to pick and
+choose the ones that are relevant to what you will be doing with Python.
+Many of the examples below use data files that are in the course’s
+GitHub repository (<a href="https://github.com/sandyjmacdonald/intro-python-course" class="external-link">https://github.com/sandyjmacdonald/intro-python-course</a>),
+and there may be more information there as well.</p>
+<p><em>If you are dealing with different types of data in your work, and
+are not sure how to process that data in Python, let us know and we’ll
+do what we can to point you in the right direction.</em></p>
+<section><h2 class="section-heading" id="fizz-buzz">Fizz Buzz<a class="anchor" aria-label="anchor" href="#fizz-buzz"></a>
+</h2>
+<hr class="half-width">
+<p>This shouldn’t be that much of a challenge, but it’s definitely worth
+you trying to get a solution to this. Why? Because this is the most
+commonly used programming task in job interviews. If reports on the
+internet are to be believed, up to 50% of people who apply for a coding
+job cannot complete it. If that is the case, it is (i) a bit worrying
+and (ii) a good way to make a really good impression at a job interview
+if you can complete it. So, what does it involve?</p>
+<p>Fizz Buzz is a simple children’s game (or elaborate student drinking
+game). A group of participants are sat in a circle, and they take turns
+to count. The first says one, the next says two, and so on. However, if
+the number you have to say is a multiple of three, instead of the number
+you say “Fizz”, and if the number is a multiple of five, you say “Buzz”.
+If the number is divisible by both 3 and 5, you say “Fizz Buzz”. If the
+child fails to say Fizz, Buzz or Fizz Buzz at the appropriate time, or
+says them at the wrong time, they are out. The game continues until
+there is only one child left, or the patience of the adult who thought
+this was a good idea is exhausted.</p>
+<p>The programming equivalent of this is: write a program to print out
+the numbers in a given range, but replace multiples of three and five
+with Fizz and Buzz, respectively, and multiples of both three and five
+with Fizz Buzz. Remember, determining whether x is a multiple of y is
+the same as asking whether the remainder when x is divided by y is
+zero.</p>
+<div id="challenge1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Can you implement Fizz Buzz in Python?</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">51</span>):</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1" aria-label="code-block-1-2"></a>    <span class="cf">if</span> n <span class="op">%</span> <span class="dv">3</span> <span class="op">==</span> <span class="dv">0</span> <span class="kw">and</span> n <span class="op">%</span> <span class="dv">5</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1" aria-label="code-block-1-3"></a>        <span class="bu">print</span>(<span class="st">"Fizz Buzz"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1" aria-label="code-block-1-4"></a>    <span class="cf">elif</span> n <span class="op">%</span> <span class="dv">3</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1" aria-label="code-block-1-5"></a>        <span class="bu">print</span>(<span class="st">"Fizz"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1" aria-label="code-block-1-6"></a>    <span class="cf">elif</span> n <span class="op">%</span> <span class="dv">5</span> <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1" aria-label="code-block-1-7"></a>        <span class="bu">print</span>(<span class="st">"Buzz"</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1" aria-label="code-block-1-8"></a>    <span class="cf">else</span>:</span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1" aria-label="code-block-1-9"></a>        <span class="bu">print</span>(n)</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="word-usage-by-shakespeare">Word Usage by Shakespeare<a class="anchor" aria-label="anchor" href="#word-usage-by-shakespeare"></a>
+</h2>
+<hr class="half-width">
+<p>From the course GitHub repository (<a href="https://github.com/sandyjmacdonald/intro-python-course" class="external-link">https://github.com/sandyjmacdonald/intro-python-course</a>),
+you can download a plain text file containing the complete works of
+Shakespeare (well, the plays and sonnets). Once downloaded, upload it to
+your Colab session using the <strong>Files</strong> panel as described
+in Episode 3.</p>
+<p>You should be fairly familiar now with the idea of reading through a
+file one line at a time, and splitting the line to get a list of
+“words”. That should help you to get started. You will notice fairly
+quickly that you will run into a couple of issues. Some things to
+consider:</p>
+<ol style="list-style-type: decimal">
+<li>Python is case sensitive so it thinks that “Hello” and “hello” (and
+“HELLO”) are different words, so you probably need to think about how to
+deal with that.</li>
+<li>Punctuation is all over the place. We have come across the .strip()
+method to get rid of spaces before, but if you give it a string - like
+<code>.strip(".,;'\"-")</code> - it takes the characters in that string
+as a set of characters to remove from the start and end of the string.
+So, using that on each word should get rid of most punctuation.</li>
+<li>Shakespeare uses a lot of contractions that are not common outside
+of poetry, so you might want to see if you can deal with them.</li>
+</ol>
+<div id="challenge2" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Think about how you would answer the following questions using
+Python:</p>
+<ul>
+<li>How many words are there in total in the file?</li>
+<li>How many unique words are there?</li>
+<li>What is the most commonly used word? How many times is it used?</li>
+<li>How many words are only used once in the whole file?</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a>words <span class="op">=</span> {}</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a>f <span class="op">=</span> <span class="bu">open</span>(<span class="st">"complete_works_shakespeare.txt"</span>, <span class="st">"r"</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1" aria-label="code-block-2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1" aria-label="code-block-2-5"></a><span class="cf">for</span> l <span class="kw">in</span> f.readlines():</span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1" aria-label="code-block-2-6"></a>    l <span class="op">=</span> l.rstrip().split()</span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1" aria-label="code-block-2-7"></a>    <span class="cf">for</span> word <span class="kw">in</span> l:</span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1" aria-label="code-block-2-8"></a>        word <span class="op">=</span> word.strip(<span class="st">".,;'</span><span class="ch">\"</span><span class="st">-?[]!"</span>).lower()</span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1" aria-label="code-block-2-9"></a>        <span class="cf">if</span> word <span class="kw">in</span> words:</span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1" aria-label="code-block-2-10"></a>            words[word] <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1" aria-label="code-block-2-11"></a>        <span class="cf">else</span>:</span>
+<span id="cb2-12"><a href="#cb2-12" tabindex="-1" aria-label="code-block-2-12"></a>            words[word] <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb2-13"><a href="#cb2-13" tabindex="-1" aria-label="code-block-2-13"></a></span>
+<span id="cb2-14"><a href="#cb2-14" tabindex="-1" aria-label="code-block-2-14"></a>highest_frequency <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb2-15"><a href="#cb2-15" tabindex="-1" aria-label="code-block-2-15"></a>most_frequent_word <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb2-16"><a href="#cb2-16" tabindex="-1" aria-label="code-block-2-16"></a>used_once <span class="op">=</span> []</span>
+<span id="cb2-17"><a href="#cb2-17" tabindex="-1" aria-label="code-block-2-17"></a></span>
+<span id="cb2-18"><a href="#cb2-18" tabindex="-1" aria-label="code-block-2-18"></a><span class="cf">for</span> word <span class="kw">in</span> words:</span>
+<span id="cb2-19"><a href="#cb2-19" tabindex="-1" aria-label="code-block-2-19"></a>    <span class="cf">if</span> words[word] <span class="op">&gt;</span> highest_frequency:</span>
+<span id="cb2-20"><a href="#cb2-20" tabindex="-1" aria-label="code-block-2-20"></a>        highest_frequency <span class="op">=</span> words[word]</span>
+<span id="cb2-21"><a href="#cb2-21" tabindex="-1" aria-label="code-block-2-21"></a>        most_frequent_word <span class="op">=</span> word</span>
+<span id="cb2-22"><a href="#cb2-22" tabindex="-1" aria-label="code-block-2-22"></a>    <span class="cf">if</span> words[word] <span class="op">==</span> <span class="dv">1</span> <span class="kw">and</span> word <span class="kw">not</span> <span class="kw">in</span> used_once:</span>
+<span id="cb2-23"><a href="#cb2-23" tabindex="-1" aria-label="code-block-2-23"></a>        used_once.append(word)</span>
+<span id="cb2-24"><a href="#cb2-24" tabindex="-1" aria-label="code-block-2-24"></a></span>
+<span id="cb2-25"><a href="#cb2-25" tabindex="-1" aria-label="code-block-2-25"></a>total_words <span class="op">=</span> <span class="bu">sum</span>(words.values())</span>
+<span id="cb2-26"><a href="#cb2-26" tabindex="-1" aria-label="code-block-2-26"></a>unique_words <span class="op">=</span> <span class="bu">len</span>(words)</span>
+<span id="cb2-27"><a href="#cb2-27" tabindex="-1" aria-label="code-block-2-27"></a></span>
+<span id="cb2-28"><a href="#cb2-28" tabindex="-1" aria-label="code-block-2-28"></a><span class="bu">print</span>(<span class="st">"Total number of words:"</span>, total_words)</span>
+<span id="cb2-29"><a href="#cb2-29" tabindex="-1" aria-label="code-block-2-29"></a><span class="bu">print</span>(<span class="st">"Number of unique words:"</span>, unique_words)</span>
+<span id="cb2-30"><a href="#cb2-30" tabindex="-1" aria-label="code-block-2-30"></a><span class="bu">print</span>(<span class="st">"Most frequent word:"</span>, most_frequent_word, <span class="st">"("</span>, highest_frequency, <span class="st">"occurrences )"</span>)</span>
+<span id="cb2-31"><a href="#cb2-31" tabindex="-1" aria-label="code-block-2-31"></a><span class="bu">print</span>(<span class="st">"Number of words used only once:"</span>, <span class="bu">len</span>(used_once))</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="more-rna-seq-plots">More RNA-seq Plots<a class="anchor" aria-label="anchor" href="#more-rna-seq-plots"></a>
+</h2>
+<hr class="half-width">
+<p>When we plotted RNA-seq data in Episode 4, we split the data set into
+significant and non-significant genes and used two
+<code>plt.scatter()</code> calls to plot the two subsets on the same
+axes. Another way of doing this would be to give a list of colours to
+<code>plt.scatter()</code>, containing one colour name per data point,
+instead of a single colour. You can create an empty colour list at the
+start of the program, then add the correct colour to the list as you
+read each data point.</p>
+<p>This makes it easy to add additional subsets of genes. For example,
+as mentioned at the end of Episode 4, when working with data involving
+large numbers of statistical tests, some form of correction of the
+p-values is used to avoid too many genes appearing to be differentially
+expressed, when the changes you are seeing are just random
+occurrences.</p>
+<p>The data file <code>corrected_rna_seq_data.txt</code>, again
+available at <a href="https://github.com/sandyjmacdonald/intro-python-course" class="external-link">https://github.com/sandyjmacdonald/intro-python-course</a>,
+contains the same data as before but with an additional column “qvalue”,
+that contains these corrected p-values.</p>
+<figure><img src="fig/05_volcano_plot_advanced.jpg" alt="Advanced volcano plot" class="figure mx-auto d-block"><div class="figcaption">Advanced volcano plot</div>
+</figure><div id="challenge3" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>For this challenge, try to plot the data with points with a q-value
+&lt; 0.05 displayed in one colour, those which have q &gt; 0.05, but p
+&lt; 0.05 in a second colour, and all other points in a third
+colour.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="im">import</span> numpy <span class="im">as</span> np </span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1" aria-label="code-block-3-2"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1" aria-label="code-block-3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1" aria-label="code-block-3-4"></a>f <span class="op">=</span> <span class="bu">open</span>(<span class="st">"corrected_rna_seq_data.txt"</span>, <span class="st">"r"</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1" aria-label="code-block-3-5"></a>header <span class="op">=</span> f.readline()</span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1" aria-label="code-block-3-6"></a></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1" aria-label="code-block-3-7"></a>log_fold_changes <span class="op">=</span> []</span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1" aria-label="code-block-3-8"></a>p_values <span class="op">=</span> []</span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1" aria-label="code-block-3-9"></a></span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1" aria-label="code-block-3-10"></a>colours <span class="op">=</span> []</span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1" aria-label="code-block-3-11"></a></span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1" aria-label="code-block-3-12"></a>green <span class="op">=</span> <span class="st">'#56AA1B'</span></span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1" aria-label="code-block-3-13"></a>red <span class="op">=</span> <span class="st">"#FF6A00"</span></span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1" aria-label="code-block-3-14"></a>blue <span class="op">=</span> <span class="st">"#016B77"</span></span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1" aria-label="code-block-3-15"></a></span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1" aria-label="code-block-3-16"></a><span class="cf">for</span> line <span class="kw">in</span> f.readlines():</span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1" aria-label="code-block-3-17"></a>    values <span class="op">=</span> line.strip().split(<span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span>
+<span id="cb3-18"><a href="#cb3-18" tabindex="-1" aria-label="code-block-3-18"></a>    p_value <span class="op">=</span> <span class="bu">float</span>(values[<span class="dv">2</span>])</span>
+<span id="cb3-19"><a href="#cb3-19" tabindex="-1" aria-label="code-block-3-19"></a>    log_fold_change <span class="op">=</span> <span class="bu">float</span>(values[<span class="dv">3</span>])</span>
+<span id="cb3-20"><a href="#cb3-20" tabindex="-1" aria-label="code-block-3-20"></a>    q_value <span class="op">=</span> <span class="bu">float</span>(values[<span class="dv">4</span>])</span>
+<span id="cb3-21"><a href="#cb3-21" tabindex="-1" aria-label="code-block-3-21"></a>    <span class="cf">if</span> q_value <span class="op">&lt;</span> <span class="fl">0.05</span> <span class="kw">and</span> <span class="bu">abs</span>(log_fold_change) <span class="op">&gt;</span> <span class="dv">1</span>:</span>
+<span id="cb3-22"><a href="#cb3-22" tabindex="-1" aria-label="code-block-3-22"></a>        colours.append(green)</span>
+<span id="cb3-23"><a href="#cb3-23" tabindex="-1" aria-label="code-block-3-23"></a>    <span class="cf">elif</span> q_value <span class="op">&gt;</span> <span class="fl">0.05</span> <span class="kw">and</span> p_value <span class="op">&lt;</span> <span class="fl">0.05</span> <span class="kw">and</span> <span class="bu">abs</span>(log_fold_change) <span class="op">&gt;</span> <span class="dv">1</span>:</span>
+<span id="cb3-24"><a href="#cb3-24" tabindex="-1" aria-label="code-block-3-24"></a>        colours.append(red)</span>
+<span id="cb3-25"><a href="#cb3-25" tabindex="-1" aria-label="code-block-3-25"></a>    <span class="cf">else</span>:</span>
+<span id="cb3-26"><a href="#cb3-26" tabindex="-1" aria-label="code-block-3-26"></a>        colours.append(blue)</span>
+<span id="cb3-27"><a href="#cb3-27" tabindex="-1" aria-label="code-block-3-27"></a>    log_fold_changes.append(log_fold_change)</span>
+<span id="cb3-28"><a href="#cb3-28" tabindex="-1" aria-label="code-block-3-28"></a>    p_values.append(p_value)</span>
+<span id="cb3-29"><a href="#cb3-29" tabindex="-1" aria-label="code-block-3-29"></a></span>
+<span id="cb3-30"><a href="#cb3-30" tabindex="-1" aria-label="code-block-3-30"></a>plt.scatter(log_fold_changes, <span class="op">-</span>np.log10(p_values), c<span class="op">=</span>colours, marker<span class="op">=</span><span class="st">'+'</span>)</span>
+<span id="cb3-31"><a href="#cb3-31" tabindex="-1" aria-label="code-block-3-31"></a>plt.axhline(<span class="op">-</span>np.log10(<span class="fl">0.05</span>), c<span class="op">=</span><span class="st">"lightgrey"</span>, linestyle<span class="op">=</span><span class="st">"--"</span>)</span>
+<span id="cb3-32"><a href="#cb3-32" tabindex="-1" aria-label="code-block-3-32"></a>plt.axvline(<span class="op">-</span><span class="dv">1</span>, c<span class="op">=</span><span class="st">"lightgrey"</span>, linestyle<span class="op">=</span><span class="st">"--"</span>)</span>
+<span id="cb3-33"><a href="#cb3-33" tabindex="-1" aria-label="code-block-3-33"></a>plt.axvline(<span class="dv">1</span>, c<span class="op">=</span><span class="st">"lightgrey"</span>, linestyle<span class="op">=</span><span class="st">"--"</span>)</span>
+<span id="cb3-34"><a href="#cb3-34" tabindex="-1" aria-label="code-block-3-34"></a>plt.xlabel(<span class="st">"log2(Fold Change)"</span>)</span>
+<span id="cb3-35"><a href="#cb3-35" tabindex="-1" aria-label="code-block-3-35"></a>plt.ylabel(<span class="st">"-log10(p)"</span>)</span>
+<span id="cb3-36"><a href="#cb3-36" tabindex="-1" aria-label="code-block-3-36"></a>plt.title(<span class="st">"Volcano plot"</span>)</span>
+<span id="cb3-37"><a href="#cb3-37" tabindex="-1" aria-label="code-block-3-37"></a></span>
+<span id="cb3-38"><a href="#cb3-38" tabindex="-1" aria-label="code-block-3-38"></a>plt.show()</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="counting-genes">Counting Genes<a class="anchor" aria-label="anchor" href="#counting-genes"></a>
+</h2>
+<hr class="half-width">
+<p>If you looked closely at the RNA-seq data files we have been using,
+you will have noticed that there are two columns that we didn’t use at
+all, the “ID” and “name” columns. The software that was used to analyse
+the data for this experiment also attempts to predict alternate splice
+forms of each gene, and to quantify the expression of each one
+separately. The “ID” field is a unique identifier for each of these
+predicted splice variants, and the “name” is the gene from which it is
+derived. We are interested in the number of IDs that each gene has, and
+how that varies from gene to gene.</p>
+<div id="challenge4" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Try writing a program that counts the number of IDs that each gene
+has, by creating a list of the IDs for each gene name. Obviously, you
+can’t know all of the gene names in advance, so we usually tackle this
+sort of task be creating a dictionary which has an entry for each gene
+name, whose value is a list of the IDs for that gene name.</p>
+<p>To do this, you will need to:</p>
+<ul>
+<li>Create an empty dictionary</li>
+<li>Read each line from the file</li>
+<li>If the gene name is not in the dictionary, create an entry with a
+value of an empty list</li>
+<li>Append the new ID to the list of IDs for the gene</li>
+</ul>
+<p>Once you have this “dictionary of lists”, think about how you could
+summarise the information it contains:</p>
+<ul>
+<li>How many unique gene names are there?</li>
+<li>How many predicted splice forms does each gene have?</li>
+<li>What is the average number of predicted splice forms per gene?</li>
+<li>Can you plot the distribution of the number of predicted splice
+variants by gene?</li>
+</ul>
+<p>You should have the skills required to do this now, but ask if you
+are not sure how to go about it.</p>
+<p>Once you have done this, look more closely at the gene name column.
+We have assumed that each predicted splice form ID has a single gene
+name, but this is not correct; many have no gene name, and some have
+more than one gene name. If we take these two issues into account, how
+many unique gene names are there in the data set? And what is the
+average number of predicted splice variants per gene, ignoring the IDs
+which don’t have a gene name? You should treat all of the gene names
+separately, even if they are one of many genes assigned to an ID.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb4">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1" aria-label="code-block-4-3"></a>f <span class="op">=</span> <span class="bu">open</span>(<span class="st">"corrected_rna_seq_data.txt"</span>, <span class="st">"r"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1" aria-label="code-block-4-4"></a>header <span class="op">=</span> f.readline()</span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1" aria-label="code-block-4-5"></a></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1" aria-label="code-block-4-6"></a>genes <span class="op">=</span> {}</span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1" aria-label="code-block-4-7"></a></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1" aria-label="code-block-4-8"></a><span class="cf">for</span> line <span class="kw">in</span> f.readlines():</span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1" aria-label="code-block-4-9"></a>    values <span class="op">=</span> line.strip().split(<span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1" aria-label="code-block-4-10"></a>    <span class="bu">id</span> <span class="op">=</span> values[<span class="dv">0</span>]</span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1" aria-label="code-block-4-11"></a>    gene <span class="op">=</span> values[<span class="dv">1</span>]</span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1" aria-label="code-block-4-12"></a>    <span class="cf">if</span> gene <span class="kw">not</span> <span class="kw">in</span> genes:</span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1" aria-label="code-block-4-13"></a>        genes[gene] <span class="op">=</span> []</span>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1" aria-label="code-block-4-14"></a>    genes[gene].append(<span class="bu">id</span>)</span>
+<span id="cb4-15"><a href="#cb4-15" tabindex="-1" aria-label="code-block-4-15"></a></span>
+<span id="cb4-16"><a href="#cb4-16" tabindex="-1" aria-label="code-block-4-16"></a>num_unique_genes <span class="op">=</span> <span class="bu">len</span>(genes)</span>
+<span id="cb4-17"><a href="#cb4-17" tabindex="-1" aria-label="code-block-4-17"></a>num_splice_forms <span class="op">=</span> [<span class="bu">len</span>(ids) <span class="cf">for</span> ids <span class="kw">in</span> genes.values()]</span>
+<span id="cb4-18"><a href="#cb4-18" tabindex="-1" aria-label="code-block-4-18"></a>avg_num_splice_forms <span class="op">=</span> <span class="bu">sum</span>(num_splice_forms) <span class="op">/</span> <span class="bu">len</span>(num_splice_forms)</span>
+<span id="cb4-19"><a href="#cb4-19" tabindex="-1" aria-label="code-block-4-19"></a></span>
+<span id="cb4-20"><a href="#cb4-20" tabindex="-1" aria-label="code-block-4-20"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb4-21"><a href="#cb4-21" tabindex="-1" aria-label="code-block-4-21"></a>plt.hist(num_splice_forms, bins<span class="op">=</span><span class="bu">range</span>(<span class="dv">1</span>, <span class="bu">max</span>(num_splice_forms) <span class="op">+</span> <span class="dv">2</span>), edgecolor<span class="op">=</span><span class="st">'black'</span>)</span>
+<span id="cb4-22"><a href="#cb4-22" tabindex="-1" aria-label="code-block-4-22"></a>plt.xlim(<span class="dv">0</span>, <span class="dv">20</span>)</span>
+<span id="cb4-23"><a href="#cb4-23" tabindex="-1" aria-label="code-block-4-23"></a>plt.xticks(<span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">20</span>))</span>
+<span id="cb4-24"><a href="#cb4-24" tabindex="-1" aria-label="code-block-4-24"></a>plt.yscale(<span class="st">'log'</span>)</span>
+<span id="cb4-25"><a href="#cb4-25" tabindex="-1" aria-label="code-block-4-25"></a>plt.xlabel(<span class="st">'Number of splice variants'</span>)</span>
+<span id="cb4-26"><a href="#cb4-26" tabindex="-1" aria-label="code-block-4-26"></a>plt.ylabel(<span class="st">'Number of genes'</span>)</span>
+<span id="cb4-27"><a href="#cb4-27" tabindex="-1" aria-label="code-block-4-27"></a>plt.title(<span class="st">'Distribution of predicted splice variants per gene'</span>)</span>
+<span id="cb4-28"><a href="#cb4-28" tabindex="-1" aria-label="code-block-4-28"></a>plt.show()</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="getting-data-from-the-web-apis">Getting Data from the Web (APIs)<a class="anchor" aria-label="anchor" href="#getting-data-from-the-web-apis"></a>
+</h2>
+<hr class="half-width">
+<p>Increasingly, data is provided publicly in the form of web apps.
+These require your program to send an HTTP request to a web site and
+process the data that comes back. Python has modules for dealing with
+most data types (including the XML and JSON formats which are
+increasingly popular), but many web apps return simple text files. We
+have implemented a web app at:</p>
+<p><a href="https://met-office-weather.vercel.app/" class="external-link">https://met-office-weather.vercel.app/</a></p>
+<p><em>Note that despite the name of the GitHub repo and the URL of the
+web app, this web app is no longer able to get the data directly from
+the Met Office, and it uses data from Open-Meteo instead, which also
+incorporates Met Office weather data.</em></p>
+<p>This returns a simple tab-separated file with the latest weather
+observations from almost 100 locations across the UK, with one on each
+line and a descriptive header line. Just for information, the web app is
+just another Python script which makes a request to the Open-Meteo web
+API, gets back the data in JSON format, does some tidying of the data,
+and converts them into a tab-separated file that is returned to you when
+you click the download link. The Flask Python library is used to create
+the web app and provide the necessary URLs for the page itself and a URL
+to request and download the file.</p>
+<p>You can have a look at the Python code at: <a href="https://github.com/sandyjmacdonald/met-office-weather" class="external-link">https://github.com/sandyjmacdonald/met-office-weather</a>.</p>
+<div id="challenge5" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Download the TSV file of weather data, and use your knowledge of how
+to read in files line-by-line and split out pieces of data to read the
+weather data in and do some basic analysis of it. Here are some
+questions you may want to answer:</p>
+<ul>
+<li>What is the average temperature across all of the locations right
+now?</li>
+<li>Where is the warmest location currently?</li>
+<li>In what percentage of the locations is it raining currently?</li>
+<li>Is there a correlation between % cloud cover and relative
+humidity?</li>
+</ul>
+<p>You may also want to try to make some plots of the data. Here are
+some ideas:</p>
+<ul>
+<li>Plot latitude/longitude of the locations on a scatter plot and then
+make the colour or size of the points on the plot proportional to the
+temperature</li>
+<li>Plot temperature against relative humidity on a scatter plot. Do you
+see any association?</li>
+<li>Plot the distribution of temperatures across all the locations. What
+shape is it?</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
+</button>
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div class="accordion-body">
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1" aria-label="code-block-5-2"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1" aria-label="code-block-5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1" aria-label="code-block-5-4"></a>f <span class="op">=</span> <span class="bu">open</span>(<span class="st">"uk_weather_data.tsv"</span>, <span class="st">"r"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1" aria-label="code-block-5-5"></a>header <span class="op">=</span> f.readline()</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1" aria-label="code-block-5-6"></a></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1" aria-label="code-block-5-7"></a>temps <span class="op">=</span> []</span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1" aria-label="code-block-5-8"></a>humidities <span class="op">=</span> []</span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1" aria-label="code-block-5-9"></a>cloud_cover <span class="op">=</span> []</span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1" aria-label="code-block-5-10"></a>lats <span class="op">=</span> []</span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1" aria-label="code-block-5-11"></a>lons <span class="op">=</span> []</span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1" aria-label="code-block-5-12"></a>warmest_temp <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb5-13"><a href="#cb5-13" tabindex="-1" aria-label="code-block-5-13"></a>warmest_loc <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb5-14"><a href="#cb5-14" tabindex="-1" aria-label="code-block-5-14"></a>num_rainy <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb5-15"><a href="#cb5-15" tabindex="-1" aria-label="code-block-5-15"></a>num_locs <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb5-16"><a href="#cb5-16" tabindex="-1" aria-label="code-block-5-16"></a></span>
+<span id="cb5-17"><a href="#cb5-17" tabindex="-1" aria-label="code-block-5-17"></a><span class="cf">for</span> line <span class="kw">in</span> f.readlines():</span>
+<span id="cb5-18"><a href="#cb5-18" tabindex="-1" aria-label="code-block-5-18"></a>    values <span class="op">=</span> line.strip().split(<span class="st">"</span><span class="ch">\t</span><span class="st">"</span>)</span>
+<span id="cb5-19"><a href="#cb5-19" tabindex="-1" aria-label="code-block-5-19"></a>    loc <span class="op">=</span> values[<span class="dv">0</span>]</span>
+<span id="cb5-20"><a href="#cb5-20" tabindex="-1" aria-label="code-block-5-20"></a>    lat <span class="op">=</span> <span class="bu">float</span>(values[<span class="dv">2</span>])</span>
+<span id="cb5-21"><a href="#cb5-21" tabindex="-1" aria-label="code-block-5-21"></a>    lon <span class="op">=</span> <span class="bu">float</span>(values[<span class="dv">3</span>])</span>
+<span id="cb5-22"><a href="#cb5-22" tabindex="-1" aria-label="code-block-5-22"></a>    temp <span class="op">=</span> <span class="bu">float</span>(values[<span class="dv">5</span>])</span>
+<span id="cb5-23"><a href="#cb5-23" tabindex="-1" aria-label="code-block-5-23"></a>    humidity <span class="op">=</span> <span class="bu">float</span>(values[<span class="dv">7</span>])</span>
+<span id="cb5-24"><a href="#cb5-24" tabindex="-1" aria-label="code-block-5-24"></a>    rain_mm <span class="op">=</span> <span class="bu">float</span>(values[<span class="dv">8</span>])</span>
+<span id="cb5-25"><a href="#cb5-25" tabindex="-1" aria-label="code-block-5-25"></a>    cloud_percent <span class="op">=</span> <span class="bu">float</span>(values[<span class="dv">9</span>])</span>
+<span id="cb5-26"><a href="#cb5-26" tabindex="-1" aria-label="code-block-5-26"></a></span>
+<span id="cb5-27"><a href="#cb5-27" tabindex="-1" aria-label="code-block-5-27"></a>    temps.append(temp)</span>
+<span id="cb5-28"><a href="#cb5-28" tabindex="-1" aria-label="code-block-5-28"></a>    </span>
+<span id="cb5-29"><a href="#cb5-29" tabindex="-1" aria-label="code-block-5-29"></a>    lats.append(lat)</span>
+<span id="cb5-30"><a href="#cb5-30" tabindex="-1" aria-label="code-block-5-30"></a>    lons.append(lon)</span>
+<span id="cb5-31"><a href="#cb5-31" tabindex="-1" aria-label="code-block-5-31"></a></span>
+<span id="cb5-32"><a href="#cb5-32" tabindex="-1" aria-label="code-block-5-32"></a>    <span class="cf">if</span> temp <span class="op">&gt;</span> warmest_temp:</span>
+<span id="cb5-33"><a href="#cb5-33" tabindex="-1" aria-label="code-block-5-33"></a>        warmest_loc <span class="op">=</span> loc</span>
+<span id="cb5-34"><a href="#cb5-34" tabindex="-1" aria-label="code-block-5-34"></a>        warmest_temp <span class="op">=</span> temp</span>
+<span id="cb5-35"><a href="#cb5-35" tabindex="-1" aria-label="code-block-5-35"></a>    </span>
+<span id="cb5-36"><a href="#cb5-36" tabindex="-1" aria-label="code-block-5-36"></a>    <span class="cf">if</span> rain_mm <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb5-37"><a href="#cb5-37" tabindex="-1" aria-label="code-block-5-37"></a>        num_rainy <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb5-38"><a href="#cb5-38" tabindex="-1" aria-label="code-block-5-38"></a>    </span>
+<span id="cb5-39"><a href="#cb5-39" tabindex="-1" aria-label="code-block-5-39"></a>    num_locs <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb5-40"><a href="#cb5-40" tabindex="-1" aria-label="code-block-5-40"></a></span>
+<span id="cb5-41"><a href="#cb5-41" tabindex="-1" aria-label="code-block-5-41"></a>    humidities.append(humidity)</span>
+<span id="cb5-42"><a href="#cb5-42" tabindex="-1" aria-label="code-block-5-42"></a>    cloud_cover.append(cloud_percent)</span>
+<span id="cb5-43"><a href="#cb5-43" tabindex="-1" aria-label="code-block-5-43"></a></span>
+<span id="cb5-44"><a href="#cb5-44" tabindex="-1" aria-label="code-block-5-44"></a><span class="co"># What is the average temperature across all of the locations right now?</span></span>
+<span id="cb5-45"><a href="#cb5-45" tabindex="-1" aria-label="code-block-5-45"></a>avg_temp <span class="op">=</span> <span class="bu">sum</span>(temps) <span class="op">/</span> <span class="bu">len</span>(temps)</span>
+<span id="cb5-46"><a href="#cb5-46" tabindex="-1" aria-label="code-block-5-46"></a><span class="bu">print</span>(<span class="ss">f"The average temperature across the locations is </span><span class="sc">{</span>avg_temp<span class="sc">:.1f}</span><span class="ss">C"</span>)</span>
+<span id="cb5-47"><a href="#cb5-47" tabindex="-1" aria-label="code-block-5-47"></a></span>
+<span id="cb5-48"><a href="#cb5-48" tabindex="-1" aria-label="code-block-5-48"></a><span class="co"># Where is the warmest location currently?</span></span>
+<span id="cb5-49"><a href="#cb5-49" tabindex="-1" aria-label="code-block-5-49"></a><span class="bu">print</span>(<span class="ss">f"The warmest location currently is </span><span class="sc">{</span>warmest_loc<span class="sc">}</span><span class="ss"> at </span><span class="sc">{</span>warmest_temp<span class="sc">:.1f}</span><span class="ss">C"</span>)</span>
+<span id="cb5-50"><a href="#cb5-50" tabindex="-1" aria-label="code-block-5-50"></a></span>
+<span id="cb5-51"><a href="#cb5-51" tabindex="-1" aria-label="code-block-5-51"></a><span class="co"># In what percentage of the locations is it raining currently?</span></span>
+<span id="cb5-52"><a href="#cb5-52" tabindex="-1" aria-label="code-block-5-52"></a>rainy_percent <span class="op">=</span> (num_rainy <span class="op">/</span> num_locs) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb5-53"><a href="#cb5-53" tabindex="-1" aria-label="code-block-5-53"></a><span class="bu">print</span>(<span class="ss">f"It is raining in </span><span class="sc">{</span>rainy_percent<span class="sc">:.1f}</span><span class="ss">% of the locations currently"</span>)</span>
+<span id="cb5-54"><a href="#cb5-54" tabindex="-1" aria-label="code-block-5-54"></a></span>
+<span id="cb5-55"><a href="#cb5-55" tabindex="-1" aria-label="code-block-5-55"></a><span class="co"># Is there a correlation between % cloud cover and relative humidity? </span></span>
+<span id="cb5-56"><a href="#cb5-56" tabindex="-1" aria-label="code-block-5-56"></a>corr <span class="op">=</span> np.corrcoef(cloud_cover, humidities)[<span class="dv">0</span>, <span class="dv">1</span>]</span>
+<span id="cb5-57"><a href="#cb5-57" tabindex="-1" aria-label="code-block-5-57"></a><span class="bu">print</span>(<span class="ss">f"Pearson's r correlation coefficient between cloud cover and humidity is </span><span class="sc">{</span>corr<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb5-58"><a href="#cb5-58" tabindex="-1" aria-label="code-block-5-58"></a></span>
+<span id="cb5-59"><a href="#cb5-59" tabindex="-1" aria-label="code-block-5-59"></a><span class="co"># Plot latitude/longitude of the locations on a scatter plot and then make </span></span>
+<span id="cb5-60"><a href="#cb5-60" tabindex="-1" aria-label="code-block-5-60"></a><span class="co"># the colour or size of the points on the plot proportional to the temperature</span></span>
+<span id="cb5-61"><a href="#cb5-61" tabindex="-1" aria-label="code-block-5-61"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">10</span>))</span>
+<span id="cb5-62"><a href="#cb5-62" tabindex="-1" aria-label="code-block-5-62"></a>sc <span class="op">=</span> plt.scatter(lons, lats, c<span class="op">=</span>temps, cmap<span class="op">=</span><span class="st">'RdYlBu_r'</span>, s<span class="op">=</span><span class="dv">60</span>, edgecolor<span class="op">=</span><span class="st">'black'</span>)</span>
+<span id="cb5-63"><a href="#cb5-63" tabindex="-1" aria-label="code-block-5-63"></a>plt.colorbar(sc, label<span class="op">=</span><span class="st">'Temperature (°C)'</span>)</span>
+<span id="cb5-64"><a href="#cb5-64" tabindex="-1" aria-label="code-block-5-64"></a>plt.xlabel(<span class="st">'Longitude'</span>)</span>
+<span id="cb5-65"><a href="#cb5-65" tabindex="-1" aria-label="code-block-5-65"></a>plt.ylabel(<span class="st">'Latitude'</span>)</span>
+<span id="cb5-66"><a href="#cb5-66" tabindex="-1" aria-label="code-block-5-66"></a>plt.title(<span class="st">'UK temperatures by location'</span>)</span>
+<span id="cb5-67"><a href="#cb5-67" tabindex="-1" aria-label="code-block-5-67"></a>plt.show()</span>
+<span id="cb5-68"><a href="#cb5-68" tabindex="-1" aria-label="code-block-5-68"></a></span>
+<span id="cb5-69"><a href="#cb5-69" tabindex="-1" aria-label="code-block-5-69"></a><span class="co"># Plot temperature against relative humidity on a scatter plot. Do you see any association?</span></span>
+<span id="cb5-70"><a href="#cb5-70" tabindex="-1" aria-label="code-block-5-70"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">10</span>))</span>
+<span id="cb5-71"><a href="#cb5-71" tabindex="-1" aria-label="code-block-5-71"></a>sc <span class="op">=</span> plt.scatter(temps, humidities, c<span class="op">=</span><span class="st">"black"</span>, s<span class="op">=</span><span class="dv">30</span>)</span>
+<span id="cb5-72"><a href="#cb5-72" tabindex="-1" aria-label="code-block-5-72"></a>plt.xlabel(<span class="st">'Temperature (C)'</span>)</span>
+<span id="cb5-73"><a href="#cb5-73" tabindex="-1" aria-label="code-block-5-73"></a>plt.ylabel(<span class="st">'Relative humidity (%)'</span>)</span>
+<span id="cb5-74"><a href="#cb5-74" tabindex="-1" aria-label="code-block-5-74"></a>plt.title(<span class="st">'UK Temperature vs. Relative Humidity'</span>)</span>
+<span id="cb5-75"><a href="#cb5-75" tabindex="-1" aria-label="code-block-5-75"></a>plt.show()</span>
+<span id="cb5-76"><a href="#cb5-76" tabindex="-1" aria-label="code-block-5-76"></a></span>
+<span id="cb5-77"><a href="#cb5-77" tabindex="-1" aria-label="code-block-5-77"></a><span class="co"># Plot the distribution of temperatures across all the locations. What shape is it?</span></span>
+<span id="cb5-78"><a href="#cb5-78" tabindex="-1" aria-label="code-block-5-78"></a>mean <span class="op">=</span> np.mean(temps)</span>
+<span id="cb5-79"><a href="#cb5-79" tabindex="-1" aria-label="code-block-5-79"></a>std <span class="op">=</span> np.std(temps)</span>
+<span id="cb5-80"><a href="#cb5-80" tabindex="-1" aria-label="code-block-5-80"></a></span>
+<span id="cb5-81"><a href="#cb5-81" tabindex="-1" aria-label="code-block-5-81"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb5-82"><a href="#cb5-82" tabindex="-1" aria-label="code-block-5-82"></a>plt.hist(temps, bins<span class="op">=</span><span class="dv">15</span>, edgecolor<span class="op">=</span><span class="st">'black'</span>)</span>
+<span id="cb5-83"><a href="#cb5-83" tabindex="-1" aria-label="code-block-5-83"></a>plt.axvline(mean, color<span class="op">=</span><span class="st">'red'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, label<span class="op">=</span><span class="ss">f'Mean: </span><span class="sc">{</span>mean<span class="sc">:.1f}</span><span class="ss">°C'</span>)</span>
+<span id="cb5-84"><a href="#cb5-84" tabindex="-1" aria-label="code-block-5-84"></a>plt.axvline(mean <span class="op">-</span> std, color<span class="op">=</span><span class="st">'orange'</span>, linestyle<span class="op">=</span><span class="st">':'</span>, label<span class="op">=</span><span class="ss">f'±1 std: </span><span class="sc">{</span>std<span class="sc">:.1f}</span><span class="ss">°C'</span>)</span>
+<span id="cb5-85"><a href="#cb5-85" tabindex="-1" aria-label="code-block-5-85"></a>plt.axvline(mean <span class="op">+</span> std, color<span class="op">=</span><span class="st">'orange'</span>, linestyle<span class="op">=</span><span class="st">':'</span>)</span>
+<span id="cb5-86"><a href="#cb5-86" tabindex="-1" aria-label="code-block-5-86"></a>plt.legend()</span>
+<span id="cb5-87"><a href="#cb5-87" tabindex="-1" aria-label="code-block-5-87"></a>plt.xlabel(<span class="st">'Temperature (C)'</span>)</span>
+<span id="cb5-88"><a href="#cb5-88" tabindex="-1" aria-label="code-block-5-88"></a>plt.ylabel(<span class="st">'Number of locations'</span>)</span>
+<span id="cb5-89"><a href="#cb5-89" tabindex="-1" aria-label="code-block-5-89"></a>plt.title(<span class="st">'Distribution of UK temperatures'</span>)</span>
+<span id="cb5-90"><a href="#cb5-90" tabindex="-1" aria-label="code-block-5-90"></a>plt.show()</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section>
 </div>
     </main>
 </div>
@@ -2904,8 +3498,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/aio.html",
   "dateCreated": "2025-07-16",
-  "dateModified": "2026-05-05",
-  "datePublished": "2026-05-05"
+  "dateModified": "2026-05-08",
+  "datePublished": "2026-05-08"
 }
 
   </script><script>

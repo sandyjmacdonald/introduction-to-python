@@ -108,11 +108,11 @@
   Introduction to Python Programming
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 50%" class="percentage">
-    50%
+<aside class="col-md-12 lesson-progress"><div style="width: 40%" class="percentage">
+    40%
   </div>
   <div class="progress software">
-    <div class="progress-bar software" role="progressbar" style="width: 50%" aria-valuenow="50" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar software" role="progressbar" style="width: 40%" aria-valuenow="40" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -244,6 +244,15 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="05_Extra_Exercises.html">5. Extra Exercises</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -302,7 +311,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Input and Output</h1>
-        <p>Last updated on 2026-04-28 |
+        <p>Last updated on 2026-05-08 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/03_Input_and_Output.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -426,7 +435,7 @@ call:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -474,23 +483,40 @@ be happy with the ways we can repeat actions on lists and dictionaries
 with for loops, as well as take decisions based on our data using if
 statements. We are now going to introduce a new data type, the Python
 file object. This is Python’s way of letting us get data from files on
-the computer. The simplest way to explain it is to get a suitable data
-file and play with it on the command line. We are going to use a couple
-of separate files in this worksheet, and we will start by downloading
-them. They can be found here:</p>
+the computer. We are going to use a couple of separate files in this
+worksheet. They can be found here:</p>
 <p><a href="https://github.com/sandyjmacdonald/intro-python-course" class="external-link">Intro to
 Python files on GitHub</a></p>
-<p>Download them all by clicking the green “Code” button, then “Download
-ZIP”. The first file you need is called <code>seq_lengths.txt</code>.
-Make sure that you move the files, once you’ve unzipped them, into the
-same folder where you will save the Python programs that you are going
-to write to process the data. Let’s look at the
-<code>seq_lengths.txt</code> file. This is a simple file which contains
-the lengths of &gt;10,000 DNA sequences produced in a particular
-experiment, one per line. What we want to do, at least as a first step,
-is to read these lengths into a list. We need to start by opening the
-file, so create a new Python program file, and save it in the same
-folder where the data file is located.</p>
+<p>Download them by clicking the green <strong>“Code”</strong> button,
+then <strong>“Download ZIP”</strong>, and unzip the folder. The first
+file you need is called <code>seq_lengths.txt</code>. To use this file
+in Colab, you need to upload it to the Colab session. Click the
+<strong>Files</strong> icon (the folder icon) in the left-hand sidebar,
+then click the <strong>Upload to session storage</strong> button (the
+upward-arrow icon) and select <code>seq_lengths.txt</code> from your
+computer.</p>
+<figure><img src="../fig/03_colab_file_upload.jpg" alt="Screenshot showing the Files panel in Google Colab with the upload button highlighted" class="figure mx-auto d-block"><div class="figcaption">Uploading a file in Google Colab</div>
+</figure><blockquote>
+<p><strong>[SCREENSHOT NEEDED:
+<code>fig/03_colab_file_upload.jpg</code>]</strong> <em>Screenshot
+showing the Colab left sidebar with the Files panel open, the upload
+button (upward-arrow icon) highlighted, and <code>seq_lengths.txt</code>
+visible in the file list after a successful upload.</em></p>
+</blockquote>
+<p>Once uploaded, the file will appear in the file list and Python can
+open it using just the filename (no folder path needed), since uploaded
+files land in the current working directory
+(<code>/content/</code>).</p>
+<p><strong>Note:</strong> Files uploaded this way are temporary and will
+be lost when your Colab session ends. Simply re-upload at the start of
+each session, or save your files to Google Drive and mount it via
+<code>Runtime -&gt; Mount Drive</code> for persistent access.</p>
+<p>Let’s look at the <code>seq_lengths.txt</code> file. This is a simple
+file which contains the lengths of &gt;10,000 DNA sequences produced in
+a particular experiment, one per line. What we want to do, at least as a
+first step, is to read these lengths into a list. We need to start by
+opening the file, so create a new Python program file, and save it in
+the same folder where the data file is located.</p>
 <p>The first thing we have to do is to open the file. The command to do
 this is <code>open()</code> and this returns a file object, which we
 will call <code>f</code>:</p>
@@ -626,7 +652,7 @@ store all of the sequence lengths in a single list.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -684,8 +710,13 @@ program: <code>plt.figure()</code>, <code>plt.hist()</code> and
 display the figure on the screen, respectively.</p>
 <p>All you need to do now is to add these to the end of you program,
 like this:</p>
-<pre class="pythonplt.figure(1)"><code><span><span class="fu">plt.hist</span><span class="op">(</span><span class="va">data</span><span class="op">)</span></span>
-<span><span class="fu">plt.show</span><span class="op">(</span><span class="op">)</span></span></code></pre>
+<div class="codewrapper sourceCode" id="cb17">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" tabindex="-1" aria-label="code-block-17-1"></a>plt.figure(<span class="dv">1</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1" aria-label="code-block-17-2"></a>plt.hist(data)</span>
+<span id="cb17-3"><a href="#cb17-3" tabindex="-1" aria-label="code-block-17-3"></a>plt.show()</span></code></pre>
+</div>
 <p>When you run the program now, it should show you a figure like
 this:</p>
 <figure><img src="../fig/03_matplotlib_histogram.jpg" alt="An example of a matplotlib histogram" class="figure mx-auto d-block"><div class="figcaption">An example of a matplotlib histogram</div>
@@ -720,7 +751,7 @@ set of possible options and see if you can reproduce this figure:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -819,8 +850,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/instructor/03_Input_and_Output.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/03_Input_and_Output.html",
   "dateCreated": "2025-07-16",
-  "dateModified": "2026-04-28",
-  "datePublished": "2026-05-05"
+  "dateModified": "2026-05-08",
+  "datePublished": "2026-05-08"
 }
 
   </script><script>
