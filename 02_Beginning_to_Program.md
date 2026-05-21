@@ -29,7 +29,7 @@ exercises: 2 # exercise time in minutes
 
 ## First Steps in Programming
 
-So far, it’s been fun playing with commands in Colab cells, but now we are going to need to start writing multi-line programs. In Colab, you do this in a code cell — you can write as many lines as you like in a single cell. To add a new code cell, click the **"+ Code"** button near the top of the notebook, or hover between cells and click the **"+ Code"** button that appears. It is good practice to add a comment at the top of your code to describe what it does. Comments begin with a `#` character, which tells Python to ignore the rest of that line.
+So far, it’s been fun playing with commands in Colab cells, but now we are going to need to start writing multi-line pieces of code that all work together — a program. In Colab, you can do this in a code cell — you can write as many lines as you like in a single cell. To add a new code cell, click the **"+ Code"** button near the top of the notebook, or hover between cells and click the **"+ Code"** button that appears. It is good practice to add a comment at the top of your code to describe what it does. Comments begin with a `#` character, which tells Python to ignore the rest of that line.
 
 ![Adding a new code cell in Google Colab](fig/02_colab_new_cell.png){alt="Screenshot showing how to add a new code cell in Google Colab"}
 
@@ -46,9 +46,7 @@ This is a very simple program, which creates a variable that refers to a list, t
 
 To run the cell in Colab, press **Shift+Enter** (runs the cell and moves to the next one) or **Ctrl+Enter** (runs the cell and stays in place), or click the ▶ play button to the left of the cell. The output will appear directly below the cell.
 
-![Running a cell in Google Colab](fig/02_colab_run_cell.jpg){alt="Screenshot showing a code cell being run in Google Colab with output displayed below"}
-
-> **[SCREENSHOT NEEDED: `fig/02_colab_run_cell.jpg`]** *Screenshot of a Colab notebook showing the shopping list `for` loop in a code cell, with the list items printed as output below the cell. The ▶ play button to the left of the cell should be visible.*
+![Running a cell in Google Colab](fig/02_colab_run_cell.png){alt="Screenshot showing a code cell being run in Google Colab with output displayed below"}
 
 One important thing to note about Colab notebooks is that all cells share the same Python session. Variables you define in one cell are available in all other cells — but they need to have been run first. If you restart the session (via `Runtime -> Restart session`), you will need to re-run your cells from the top.
 
