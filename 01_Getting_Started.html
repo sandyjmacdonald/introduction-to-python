@@ -313,7 +313,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Getting Started</h1>
-        <p>Last updated on 2026-05-08 |
+        <p>Last updated on 2026-05-21 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/01_Getting_Started.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -362,25 +362,23 @@ objects</li>
 <hr class="half-width"><p>Python itself normally exists just to run programs that you have
 written, but it can run as a program in its own right, allowing you to
 explore the language by typing commands which it then executes for you.
-Quite a lot can be done at this command prompt, but to do anything
-serious you will need to start creating your programs in a text editor
-and executing them with Python. However, we will start by looking at
-what you can do at the Python prompt.</p>
-<p>For this course, we will be using Google Colab, a free, cloud-based
-Python environment that runs entirely in your browser — no installation
-required. To get started, go to <a href="https://colab.research.google.com" class="external-link">https://colab.research.google.com</a>
-and sign in with a Google account. Click <strong>“New notebook”</strong>
-to create a new notebook, and you should see an interface like the one
-below.</p>
-<figure><img src="fig/01_colab_interface.png" alt="Screenshot of the Google Colab interface showing a new notebook" class="figure mx-auto d-block"><div class="figcaption">Google Colab interface</div>
-</figure><p>The main way you interact with Python in Colab is through
-<strong>cells</strong>. You type Python commands into a code cell and
-run it by pressing <strong>Shift+Enter</strong> (which runs the cell and
-moves to the next one) or <strong>Ctrl+Enter</strong> (which runs the
-cell and stays). The output appears directly below the cell. You can
-have as many cells as you like in a notebook, and they all share the
-same Python session.</p>
-<div id="hello-world" class="callout challenge">
+In this course, we will focus solely on what you can do at the Python
+prompt, in this case the one that is available in the Google Colab IDE
+(Integrated Development Environment).</p>
+<p>In reality, running full programs with Python, standalone and outside
+of Google Colab, is as simple as copying and pasting the code that you
+have written in Colab into a text file, saving it with the
+<code>.py</code> file extension and then executing it.</p>
+<p>The main way you interact with Python in Colab is through
+<strong>cells</strong> (the box in the screenshot below that says “Start
+coding…”). You type Python commands into a code cell and run it by
+pressing <strong>Shift+Enter</strong> (which runs the cell and moves to
+the next one) or <strong>Ctrl+Enter</strong> (which runs the cell and
+stays). The output appears directly below the cell. You can have as many
+cells as you like in a notebook, and they all share the same Python
+session.</p>
+<figure><img src="fig/01_colab_interface.png" alt="Screenshot of the Google Colab interface showing an empty cell" class="figure mx-auto d-block"><div class="figcaption">Google Colab interface</div>
+</figure><div id="hello-world" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -422,26 +420,26 @@ is a string and is what you want the print function to print out.</p>
 </div>
 </section><section><h2 class="section-heading" id="experimenting-with-the-python-shell">Experimenting with the Python Shell<a class="anchor" aria-label="anchor" href="#experimenting-with-the-python-shell"></a></h2>
 <hr class="half-width"><p>The Python shell (which is what you are using now) is a great way to
-experiment with Python. It’s something that I return to every time I
-find myself thinking “I wonder what happens if you do this?” or “what’s
-the best way to do that?”. You can’t break anything by trying something
-and if you make a mistake at least you will get an error message that
-you might be able to decipher.</p>
+experiment with Python. It’s something that we return to every time we
+find ourselves thinking “I wonder what happens if you do this?” or
+“what’s the best way to do that?”. You can’t break anything by trying
+something and if you make a mistake at least you will get an error
+message that you might be able to decipher.</p>
 <p>You are not limited to what you can do at the prompt. You can load
 modules, look at them to see what they do, play with them. The first
-versions of the bar charts in Worksheet 4 were all produced at the
-Python prompt, which enabled me to tweak them to see exactly how I
-wanted them before writing the program to produce the whole figure. This
-meant I could see how they looked after every command and get them
-looking just as I wanted. I could also check the documentation for the
-modules I wanted to use by typing <code>help()</code>. There is a lot of
-information in there and you will find yourself using it again and
-again.</p>
+versions of the bar charts in Episode 4 were all produced at the Python
+prompt, which enabled us to tweak them to see exactly how we wanted them
+before writing the program to produce the whole figure. This meant we
+could see how they looked after every command and get them looking just
+as we wanted. We could also check the documentation for the modules we
+wanted to use by typing <code>help()</code> and then the name of a
+function or module. There is a lot of information in there and you will
+find yourself using it again and again.</p>
 <p>The only thing you can’t do at the interactive prompt, though, is
 save what you have done. In Colab, you can add new cells to write and
 run multi-line programs, and your notebook is automatically saved to
-Google Drive; we’ll see how to do that in Worksheet 2. If you ever want
-to use Python on your own computer instead, I recommend installing
+Google Drive; we’ll see how to do that in Episode 2. If you ever want to
+use Python on your own computer instead, we recommend installing
 Anaconda Python, which comes with almost all of the modules you will
 ever need pre-installed (and makes it simpler for you to install
 others). Anaconda is available for Windows, Mac and Linux, and is worth
@@ -1047,7 +1045,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.20.1" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/sandyjmacdonald/varnish/tree/e769a0b6834538e361d64be45ffb352c6b923ec3" class="external-link">varnish (1.0.7.9000)</a></p>
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.20.2" class="external-link">sandpaper (0.20.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a>, and <a href="https://github.com/sandyjmacdonald/varnish/tree/e769a0b6834538e361d64be45ffb352c6b923ec3" class="external-link">varnish (1.0.7.9000)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -1069,8 +1067,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/01_Getting_Started.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/01_Getting_Started.html",
   "dateCreated": "2025-07-16",
-  "dateModified": "2026-05-08",
-  "datePublished": "2026-05-19"
+  "dateModified": "2026-05-21",
+  "datePublished": "2026-05-21"
 }
 
   </script><script>
